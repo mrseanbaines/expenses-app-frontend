@@ -22,7 +22,10 @@ export default class App extends PureComponent {
   }
 
   componentDidMount = () => {
+    const { getCategories } = this.props;
+
     this.getExpenses();
+    getCategories();
   };
 
   componentDidUpdate(prevProps) {
@@ -63,7 +66,7 @@ export default class App extends PureComponent {
   };
 
   render = () => {
-    const { expenses, total, currentPage } = this.props;
+    const { expenses, total, currentPage, categories } = this.props;
     const { activeImage, activeIndex, itemsPerPage, searchQuery } = this.state;
 
     return (
@@ -77,6 +80,11 @@ export default class App extends PureComponent {
           <Col mb={[0, 0, 3]} mt={[2, 2, 3]} width={[1, 4 / 12]}>
             <SearchBar updateSearchQuery={this.updateSearchQuery} searchQuery={searchQuery} />
             <Hr />
+            <ul>
+              {categories.map(category => (
+                <li>{category}</li>
+              ))}
+            </ul>
           </Col>
           <Col width={[1, 8 / 12]}>
             {expenses.filter(this.searchCriteria).map((expense, i) => (
@@ -102,7 +110,9 @@ export default class App extends PureComponent {
 
 App.defaultProps = {
   expenses: [],
+  categories: [],
   getExpenses: () => {},
+  getCategories: () => {},
   page: 0,
   total: 0,
   currentPage: 1,
@@ -111,7 +121,9 @@ App.defaultProps = {
 
 App.propTypes = {
   expenses: PropTypes.arrayOf(PropTypes.object),
+  categories: PropTypes.arrayOf(PropTypes.string),
   getExpenses: PropTypes.func,
+  getCategories: PropTypes.func,
   page: PropTypes.number,
   total: PropTypes.number,
   currentPage: PropTypes.number,

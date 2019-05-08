@@ -21,9 +21,16 @@ const receipts = {
   UPLOAD_RECEIPT_FAILURE: 'UPLOAD_RECEIPT_FAILURE',
 };
 
+const categories = {
+  GET_CATEGORIES_REQUEST: 'GET_CATEGORIES_REQUEST',
+  GET_CATEGORIES_SUCCESS: 'GET_CATEGORIES_SUCCESS',
+  GET_CATEGORIES_FAILURE: 'GET_CATEGORIES_FAILURE',
+};
+
 export default {
   app,
   expenses,
   comments,
   receipts,
+  categories,
 };
