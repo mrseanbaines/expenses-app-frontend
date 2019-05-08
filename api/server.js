@@ -33,6 +33,8 @@ app.use('/receipts', express.static(path.join(__dirname, 'receipts')));
 // Define routes
 app.use('/expenses', require('./routes/expenses'));
 
+app.use('/categories', require('./routes/categories'));
+
 // Start the server on the correct port
 const server = app.listen(process.env.API_PORT, () => {
   // eslint-disable-next-line no-console
