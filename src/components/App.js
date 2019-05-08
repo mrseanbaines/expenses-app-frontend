@@ -5,6 +5,7 @@ import ExpenseCard from '../containers/ExpenseCard';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
 import Modal from './Modal';
+import ListItemButtons from './ListItemButtons';
 
 const { Hr } = Common;
 const { Container, Row, Col, Box } = Grid;
@@ -80,11 +81,9 @@ export default class App extends PureComponent {
           <Col mb={[0, 0, 3]} mt={[2, 2, 3]} width={[1, 4 / 12]}>
             <SearchBar updateSearchQuery={this.updateSearchQuery} searchQuery={searchQuery} />
             <Hr />
-            <ul>
-              {categories.map(category => (
-                <li>{category}</li>
-              ))}
-            </ul>
+            <Box mt={2}>
+              <ListItemButtons items={categories} />
+            </Box>
           </Col>
           <Col width={[1, 8 / 12]}>
             {expenses.filter(this.searchCriteria).map((expense, i) => (
