@@ -1,14 +1,16 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Common } from '../styled-components';
+import { Grid, Common, StyledListItemButtons } from '../styled-components';
 import ExpenseCard from '../containers/ExpenseCard';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
 import Modal from './Modal';
 import ListItemButtons from './ListItemButtons';
+import iconPlus from '../images/icon-plus.svg';
 
-const { Hr } = Common;
+const { Hr, TextInput } = Common;
 const { Container, Row, Col, Box } = Grid;
+const { Item } = StyledListItemButtons;
 
 export default class App extends PureComponent {
   constructor(props) {
@@ -19,7 +21,12 @@ export default class App extends PureComponent {
       activeIndex: 0,
       itemsPerPage: 25,
       activeImage: '',
+      addingCategory: false,
+      newCategoryText: '',
+      activeCategory: '',
     };
+
+    this.categoryInput = React.createRef();
   }
 
   componentDidMount = () => {
@@ -66,9 +73,56 @@ export default class App extends PureComponent {
     this.setState({ activeImage });
   };
 
+  toggleAddingCategory = () => {
+    const { addingCategory } = this.state;
+
+    this.setState(
+      prevState => ({
+        addingCategory: !prevState.addingCategory,
+      }),
+      () => {
+        if (!addingCategory) {
+          this.categoryInput.current.focus();
+        }
+      }
+    );
+  };
+
+  updateCategoryValue = e => {
+    this.setState({
+      newCategoryText: e.target.value,
+    });
+  };
+
+  setActiveCategory = category => {
+    this.setState(prevState => ({
+      activeCategory: prevState.activeCategory === category ? '' : category,
+    }));
+  };
+
+  addCategory = async e => {
+    e.preventDefault();
+    const { addCategory } = this.props;
+    const { newCategoryText: category } = this.state;
+
+    if (!category) return;
+
+    await addCategory({ category });
+
+    this.setState({ newCategoryText: '' });
+  };
+
   render = () => {
     const { expenses, total, currentPage, categories } = this.props;
-    const { activeImage, activeIndex, itemsPerPage, searchQuery } = this.state;
+    const {
+      activeImage,
+      activeIndex,
+      itemsPerPage,
+      searchQuery,
+      addingCategory,
+      newCategoryText,
+      activeCategory,
+    } = this.state;
 
     return (
       <Container>
@@ -82,7 +136,26 @@ export default class App extends PureComponent {
             <SearchBar updateSearchQuery={this.updateSearchQuery} searchQuery={searchQuery} />
             <Hr />
             <Box mt={2}>
-              <ListItemButtons items={categories} />
+              <ListItemButtons items={categories} onClick={this.setActiveCategory} activeItem={activeCategory} />
+              {addingCategory ? (
+                <form onSubmit={this.addCategory} autoComplete="off">
+                  <TextInput
+                    ref={this.categoryInput}
+                    name="category"
+                    value={newCategoryText}
+                    placeholder="Add a category"
+                    onBlur={this.toggleAddingCategory}
+                    onChange={this.updateCategoryValue}
+                  />
+                </form>
+              ) : (
+                <Item onClick={this.toggleAddingCategory}>
+                  <Box mr={2}>
+                    <img src={iconPlus} alt="Add" width="16" height="16" />
+                  </Box>
+                  Add category
+                </Item>
+              )}
             </Box>
           </Col>
           <Col width={[1, 8 / 12]}>
@@ -116,6 +189,7 @@ App.defaultProps = {
   total: 0,
   currentPage: 1,
   setCurrentPage: () => {},
+  addCategory: () => {},
 };
 
 App.propTypes = {
@@ -127,4 +201,5 @@ App.propTypes = {
   total: PropTypes.number,
   currentPage: PropTypes.number,
   setCurrentPage: PropTypes.func,
+  addCategory: PropTypes.func,
 };

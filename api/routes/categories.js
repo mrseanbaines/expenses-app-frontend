@@ -21,12 +21,18 @@ router.post('/', (req, res) => {
   if (category) {
     if (categories.indexOf(category) < 0) {
       categories.push(category);
-      res.status(201).send(categories);
+      res.status(201).send({
+        category,
+        total: categories.length,
+      });
     } else {
       res.status(409).send('Category already exists');
     }
   } else {
-    res.status(200).send(categories);
+    res.status(200).send({
+      category,
+      total: categories.length,
+    });
   }
 });
 

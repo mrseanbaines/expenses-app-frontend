@@ -4,27 +4,27 @@ import { StyledListItemButtons } from '../styled-components';
 
 const { Item, Icon } = StyledListItemButtons;
 
-const ListItemButtons = memo(({ items }) => (
+const ListItemButtons = memo(({ items, onClick, activeItem }) => (
   <ul>
     {items.map(item => (
-      <Item>
+      <Item key={item} onClick={() => onClick(item)} className={item === activeItem ? 'active' : undefined}>
         <Icon />
         {item}
       </Item>
     ))}
-    <Item>
-      <Icon />
-      Add category
-    </Item>
   </ul>
 ));
 
 ListItemButtons.defaultProps = {
   items: [],
+  onClick: () => {},
+  activeItem: '',
 };
 
 ListItemButtons.propTypes = {
   items: PropTypes.arrayOf(PropTypes.string),
+  onClick: PropTypes.func,
+  activeItem: PropTypes.string,
 };
 
 export default ListItemButtons;

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { StyledExpenseCard, Grid, Common } from '../styled-components';
 import { formatPrice, formatDate } from '../utils';
 
-const { Container, User, Merchant, Amount, DateTime, CommentBox, Comment } = StyledExpenseCard;
-const { Hr, Button, TextLink } = Common;
+const { Container, User, Merchant, Amount, DateTime, Comment } = StyledExpenseCard;
+const { Hr, Button, TextLink, TextInput } = Common;
 const { Flex, Box } = Grid;
 
 export default class ExpenseCard extends PureComponent {
@@ -98,7 +98,7 @@ export default class ExpenseCard extends PureComponent {
             <form onSubmit={e => this.addComment({ e, id })} autoComplete="off">
               <Flex>
                 <Box flex={1} mr={3}>
-                  <CommentBox
+                  <TextInput
                     onChange={this.updateComment}
                     value={commentText}
                     name="comment"

@@ -12,6 +12,7 @@ const Button = styled.button.attrs({
   border: none;
   cursor: pointer;
   transition: all 100ms;
+  line-height: ${props => props.theme.fontSizes[2]};
 
   :hover {
     background: ${props => props.theme.colors.mainDark};
@@ -84,9 +85,35 @@ export const StyledPagination = styled.ul`
   }
 `;
 
+const TextInput = styled.input.attrs({
+  type: 'text',
+})`
+  font-size: ${props => props.theme.fontSizes[0]};
+  font-weight: ${props => props.theme.fontWeights.regular};
+  padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
+  background: ${props => props.theme.colors.greys.extraLight};
+  border-radius: ${props => props.theme.radii[1]};
+  color: ${props => props.theme.colors.greys.dark};
+  line-height: ${props => props.theme.fontSizes[2]};
+  display: block;
+  width: 100%;
+
+  ::placeholder {
+    color: ${props => props.theme.colors.greys.medium};
+    opacity: 1;
+  }
+
+  :hover,
+  :focus,
+  :active {
+    background-color: ${props => props.theme.colors.greys.light};
+  }
+`;
+
 export default {
   Button,
   Hr,
   TextLink,
   StyledPagination,
+  TextInput,
 };

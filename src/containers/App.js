@@ -12,6 +12,7 @@ const mapStateToProps = ({ expenses, app, categories }) => ({
 const mapDispatchToProps = dispatch => ({
   getExpenses: args => dispatch(expensesActions.getExpenses(args)),
   getCategories: args => dispatch(categoriesActions.getCategories(args)),
+  addCategory: args => dispatch(categoriesActions.addCategory(args)),
   setCurrentPage: args => dispatch(appActions.setCurrentPage(args)),
 });
 

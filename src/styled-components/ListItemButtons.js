@@ -9,11 +9,19 @@ const Item = styled.li`
   cursor: pointer;
   display: flex;
   align-items: center;
+  user-select: none;
+  background: ${props => props.theme.colors.greys.extraLight};
+  line-height: ${props => props.theme.fontSizes[2]};
 
   :hover,
   :focus,
-  :active {
+  :active,
+  &.active {
     background: ${props => props.theme.colors.greys.light};
+  }
+
+  img {
+    display: block;
   }
 `;
 

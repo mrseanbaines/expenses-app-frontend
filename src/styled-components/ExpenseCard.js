@@ -39,24 +39,6 @@ const DateTime = styled.div`
   color: ${props => props.theme.colors.greys.medium};
 `;
 
-const CommentBox = styled.input.attrs({
-  type: 'text',
-})`
-  font-size: ${props => props.theme.fontSizes[0]};
-  font-weight: ${props => props.theme.fontWeights.regular};
-  padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
-  background: ${props => props.theme.colors.greys.extraLight};
-  border-radius: ${props => props.theme.radii[1]};
-  color: ${props => props.theme.colors.greys.dark};
-  display: block;
-  width: 100%;
-
-  ::placeholder {
-    color: ${props => props.theme.colors.greys.medium};
-    opacity: 1;
-  }
-`;
-
 export const Comment = styled.div`
   strong {
     font-weight: ${props => props.theme.fontWeights.medium};
@@ -77,6 +59,5 @@ export default {
   Merchant,
   Amount,
   DateTime,
-  CommentBox,
   Comment,
 };
