@@ -25,8 +25,8 @@ export default (state = initialState, { type, categories, category, total }) => 
         loading: false,
         success: true,
         error: false,
-        categories: categories.categories,
-        total: categories.total,
+        categories,
+        total,
       };
     }
 

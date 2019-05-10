@@ -7,9 +7,9 @@ const { Item, Icon } = StyledListItemButtons;
 const ListItemButtons = memo(({ items, onClick, activeItem }) => (
   <ul>
     {items.map(item => (
-      <Item key={item} onClick={() => onClick(item)} className={item === activeItem ? 'active' : undefined}>
+      <Item key={item.id} onClick={() => onClick(item.id)} className={item.id === activeItem ? 'active' : undefined}>
         <Icon />
-        {item}
+        {item.name}
       </Item>
     ))}
   </ul>
@@ -22,7 +22,12 @@ ListItemButtons.defaultProps = {
 };
 
 ListItemButtons.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.string),
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+    })
+  ),
   onClick: PropTypes.func,
   activeItem: PropTypes.string,
 };

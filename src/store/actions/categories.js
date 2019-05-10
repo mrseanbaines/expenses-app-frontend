@@ -4,9 +4,10 @@ const getCategoriesRequest = () => ({
   type: actionTypes.categories.GET_CATEGORIES_REQUEST,
 });
 
-const getCategoriesSuccess = categories => ({
+const getCategoriesSuccess = ({ categories, total }) => ({
   type: actionTypes.categories.GET_CATEGORIES_SUCCESS,
   categories,
+  total,
 });
 
 const getCategoriesFailure = () => ({
@@ -46,7 +47,7 @@ const addCategory = ({ category }) => async dispatch => {
     const response = await fetch(`${process.env.API_URL}/categories`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ category }),
+      body: JSON.stringify({ category: { name: category } }),
     });
     const json = await response.json();
     dispatch(addCategorySuccess(json));

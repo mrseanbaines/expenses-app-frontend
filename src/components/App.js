@@ -23,7 +23,7 @@ export default class App extends PureComponent {
       activeImage: '',
       addingCategory: false,
       newCategoryText: '',
-      activeCategory: '',
+      activeCategoryId: '',
     };
 
     this.categoryInput = React.createRef();
@@ -94,9 +94,9 @@ export default class App extends PureComponent {
     });
   };
 
-  setActiveCategory = category => {
+  setActiveCategory = categoryId => {
     this.setState(prevState => ({
-      activeCategory: prevState.activeCategory === category ? '' : category,
+      activeCategoryId: prevState.activeCategoryId === categoryId ? '' : categoryId,
     }));
   };
 
@@ -121,7 +121,7 @@ export default class App extends PureComponent {
       searchQuery,
       addingCategory,
       newCategoryText,
-      activeCategory,
+      activeCategoryId,
     } = this.state;
 
     return (
@@ -136,7 +136,7 @@ export default class App extends PureComponent {
             <SearchBar updateSearchQuery={this.updateSearchQuery} searchQuery={searchQuery} />
             <Hr />
             <Box mt={2}>
-              <ListItemButtons items={categories} onClick={this.setActiveCategory} activeItem={activeCategory} />
+              <ListItemButtons items={categories} onClick={this.setActiveCategory} activeItem={activeCategoryId} />
               {addingCategory ? (
                 <form onSubmit={this.addCategory} autoComplete="off">
                   <TextInput
@@ -194,7 +194,12 @@ App.defaultProps = {
 
 App.propTypes = {
   expenses: PropTypes.arrayOf(PropTypes.object),
-  categories: PropTypes.arrayOf(PropTypes.string),
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+    })
+  ),
   getExpenses: PropTypes.func,
   getCategories: PropTypes.func,
   page: PropTypes.number,
