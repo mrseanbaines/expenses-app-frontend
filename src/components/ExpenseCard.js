@@ -1,11 +1,12 @@
 import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { StyledExpenseCard, Grid, Common } from '../styled-components';
+import { StyledExpenseCard, Grid, Common, StyledListItemButtons } from '../styled-components';
 import { formatPrice, formatDate } from '../utils';
 
 const { Container, User, Merchant, Amount, DateTime, Comment } = StyledExpenseCard;
 const { Hr, Button, TextLink, TextInput } = Common;
 const { Flex, Box } = Grid;
+const { Item, Icon } = StyledListItemButtons;
 
 export default class ExpenseCard extends PureComponent {
   constructor(props) {
@@ -58,6 +59,7 @@ export default class ExpenseCard extends PureComponent {
       amount,
       comment,
       receipts,
+      category,
       activeIndex,
       index,
       updateActiveIndex,
@@ -82,6 +84,14 @@ export default class ExpenseCard extends PureComponent {
             <Box mt={2}>
               <DateTime>{formatDate(date)}</DateTime>
             </Box>
+            {category && (
+              <Box mt={3}>
+                <Item noBg>
+                  <Icon />
+                  {category.name}
+                </Item>
+              </Box>
+            )}
           </Box>
           <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" ml={2}>
             <Amount>{formatPrice({ currency, value })}</Amount>
@@ -170,6 +180,7 @@ ExpenseCard.defaultProps = {
     currency: '',
   },
   comment: '',
+  category: null,
   receipts: [],
   activeIndex: 0,
   index: 0,
@@ -193,6 +204,10 @@ ExpenseCard.propTypes = {
     currency: PropTypes.string,
   }),
   comment: PropTypes.string,
+  category: PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+  }),
   receipts: PropTypes.arrayOf(PropTypes.object),
   activeIndex: PropTypes.number,
   index: PropTypes.number,

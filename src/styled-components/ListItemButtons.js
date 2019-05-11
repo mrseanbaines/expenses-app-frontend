@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Item = styled.li`
   padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
@@ -23,6 +23,20 @@ const Item = styled.li`
   img {
     display: block;
   }
+
+  ${({ noBg }) =>
+    noBg &&
+    css`
+      padding: 0;
+
+      &,
+      :hover,
+      :focus,
+      :active,
+      &.active {
+        background: transparent;
+      }
+    `}
 `;
 
 const Icon = styled.div`
