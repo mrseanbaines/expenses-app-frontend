@@ -2,6 +2,7 @@ import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { StyledExpenseCard, Grid, Common, StyledListItemButtons } from '../styled-components';
 import { formatPrice, formatDate } from '../utils';
+import iconPlus from '../images/icon-plus.svg';
 
 const { Container, User, Merchant, Amount, DateTime, Comment } = StyledExpenseCard;
 const { Hr, Button, TextLink, TextInput } = Common;
@@ -84,14 +85,21 @@ export default class ExpenseCard extends PureComponent {
             <Box mt={2}>
               <DateTime>{formatDate(date)}</DateTime>
             </Box>
-            {category && (
-              <Box mt={3}>
+            <Box mt={3}>
+              {category ? (
                 <Item noBg>
                   <Icon />
                   {category.name}
                 </Item>
-              </Box>
-            )}
+              ) : (
+                <Item inline outline onClick={this.toggleAddingCategory}>
+                  <Box mr={2}>
+                    <img src={iconPlus} alt="Add" width="16" height="16" />
+                  </Box>
+                  Choose category
+                </Item>
+              )}
+            </Box>
           </Box>
           <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" ml={2}>
             <Amount>{formatPrice({ currency, value })}</Amount>

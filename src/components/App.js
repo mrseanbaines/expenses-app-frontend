@@ -161,7 +161,7 @@ export default class App extends PureComponent {
               ) : (
                 <Item onClick={this.toggleAddingCategory}>
                   <Box mr={2}>
-                    <img src={iconPlus} alt="Add" width="16" height="16" />
+                    <img src={iconPlus} alt="" width="16" height="16" />
                   </Box>
                   Add category
                 </Item>

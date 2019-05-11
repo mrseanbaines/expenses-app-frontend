@@ -9,7 +9,7 @@ const Button = styled.button.attrs({
   background: ${props => props.theme.colors.main};
   border-radius: ${props => props.theme.radii[1]};
   color: ${props => props.theme.colors.white};
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   transition: all 100ms;
   line-height: ${props => props.theme.fontSizes[2]};
@@ -91,22 +91,17 @@ const TextInput = styled.input.attrs({
   font-size: ${props => props.theme.fontSizes[0]};
   font-weight: ${props => props.theme.fontWeights.regular};
   padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
-  background: ${props => props.theme.colors.greys.extraLight};
+  background: ${props => props.theme.colors.overlay};
   border-radius: ${props => props.theme.radii[1]};
   color: ${props => props.theme.colors.greys.dark};
   line-height: ${props => props.theme.fontSizes[2]};
   display: block;
   width: 100%;
+  border: 1px solid transparent;
 
   ::placeholder {
     color: ${props => props.theme.colors.greys.medium};
     opacity: 1;
-  }
-
-  :hover,
-  :focus,
-  :active {
-    background-color: ${props => props.theme.colors.greys.light};
   }
 `;
 

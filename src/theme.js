@@ -11,6 +11,7 @@ export default {
     light: 300,
   },
   colors: {
+    overlay: 'rgba(0, 0, 0, 0.03)',
     main: '#b0a1ff',
     mainDark: '#a899f2',
     white: '#fff',

@@ -7,17 +7,17 @@ const Item = styled.li`
   color: ${props => props.theme.colors.greys.medium};
   border-radius: ${props => props.theme.radii[1]};
   cursor: pointer;
-  display: flex;
+  display: ${props => (props.inline ? 'inline-flex' : 'flex')};
   align-items: center;
   user-select: none;
-  background: ${props => props.theme.colors.greys.extraLight};
   line-height: ${props => props.theme.fontSizes[2]};
+  border: 1px solid transparent;
 
   :hover,
   :focus,
   :active,
   &.active {
-    background: ${props => props.theme.colors.greys.light};
+    background: ${props => props.theme.colors.overlay};
   }
 
   img {
@@ -34,7 +34,20 @@ const Item = styled.li`
       :focus,
       :active,
       &.active {
-        background: transparent;
+        background: none;
+      }
+    `}
+
+  ${({ outline }) =>
+    outline &&
+    css`
+      border-color: ${props => props.theme.colors.overlay};
+
+      :hover,
+      :focus,
+      :active,
+      &.active {
+        border-color: transparent;
       }
     `}
 `;

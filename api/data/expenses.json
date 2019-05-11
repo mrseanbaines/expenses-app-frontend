@@ -9,6 +9,10 @@
     "merchant": "Jazzy",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "1f9793a7-c5b3-4ab6-855e-a91546d77bce",
+      "name": "Transport"
+    },
     "user": {
       "first": "Fields",
       "last": "Manklow",
@@ -25,6 +29,10 @@
     "merchant": "Twimbo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "1f9793a7-c5b3-4ab6-855e-a91546d77bce",
+      "name": "Transport"
+    },
     "user": {
       "first": "Everard",
       "last": "Fidelli",
@@ -41,6 +49,10 @@
     "merchant": "Katz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "1f9793a7-c5b3-4ab6-855e-a91546d77bce",
+      "name": "Transport"
+    },
     "user": {
       "first": "Aluino",
       "last": "Hollow",
@@ -57,6 +69,10 @@
     "merchant": "Jamia",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "1f9793a7-c5b3-4ab6-855e-a91546d77bce",
+      "name": "Transport"
+    },
     "user": {
       "first": "Archy",
       "last": "Cottey",
@@ -73,6 +89,10 @@
     "merchant": "Youopia",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "1f9793a7-c5b3-4ab6-855e-a91546d77bce",
+      "name": "Transport"
+    },
     "user": {
       "first": "Georgiana",
       "last": "Bolderson",
@@ -89,6 +109,10 @@
     "merchant": "Vimbo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Allistir",
       "last": "Bixley",
@@ -105,6 +129,10 @@
     "merchant": "Wordware",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Thorn",
       "last": "Cordrey",
@@ -121,6 +149,10 @@
     "merchant": "Meejo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Even",
       "last": "Hacon",
@@ -137,6 +169,10 @@
     "merchant": "Fanoodle",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Alexander",
       "last": "O'Halloran",
@@ -153,6 +189,10 @@
     "merchant": "Jazzy",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Elnore",
       "last": "Kollas",
@@ -169,6 +209,10 @@
     "merchant": "Jabbersphere",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Lindsey",
       "last": "Covert",
@@ -185,6 +229,10 @@
     "merchant": "Realcube",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Modesty",
       "last": "Alty",
@@ -201,6 +249,10 @@
     "merchant": "Youspan",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Sergio",
       "last": "Trevillion",
@@ -217,6 +269,10 @@
     "merchant": "Jabbersphere",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "74bb00ce-2168-4558-934f-919281755877",
+      "name": "Groceries"
+    },
     "user": {
       "first": "Wenda",
       "last": "Osgar",
@@ -233,6 +289,10 @@
     "merchant": "Quinu",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Valerye",
       "last": "Shetliff",
@@ -249,6 +309,10 @@
     "merchant": "Janyx",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Goober",
       "last": "Boodell",
@@ -265,6 +329,10 @@
     "merchant": "Wikizz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Charlene",
       "last": "Thome",
@@ -281,6 +349,10 @@
     "merchant": "Voomm",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Nydia",
       "last": "Barttrum",
@@ -297,6 +369,10 @@
     "merchant": "Blogtag",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Bekki",
       "last": "Tollet",
@@ -313,6 +389,10 @@
     "merchant": "Layo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Devinne",
       "last": "Bramah",
@@ -329,6 +409,10 @@
     "merchant": "Quinu",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Gerrard",
       "last": "Heninghem",
@@ -345,6 +429,10 @@
     "merchant": "Wikido",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Henka",
       "last": "Daile",
@@ -361,6 +449,10 @@
     "merchant": "Skiba",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Conrado",
       "last": "Blaxlande",
@@ -377,6 +469,10 @@
     "merchant": "Janyx",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Trenna",
       "last": "Kleinber",
@@ -393,6 +489,10 @@
     "merchant": "Skajo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Krystyna",
       "last": "Bisseker",
@@ -409,6 +509,10 @@
     "merchant": "Jazzy",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Zerk",
       "last": "Mosdill",
@@ -425,6 +529,10 @@
     "merchant": "Babbleblab",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "77ebd9ec-7680-4607-b316-64548681cc02",
+      "name": "Bills"
+    },
     "user": {
       "first": "Thea",
       "last": "Kimberley",
@@ -441,6 +549,10 @@
     "merchant": "Avamba",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Lynsey",
       "last": "Merwede",
@@ -457,6 +569,10 @@
     "merchant": "Kanoodle",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Ursulina",
       "last": "Ipplett",
@@ -473,6 +589,10 @@
     "merchant": "Pixonyx",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Prentice",
       "last": "Marunchak",
@@ -489,6 +609,10 @@
     "merchant": "Babbleblab",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Ruthann",
       "last": "Mitro",
@@ -505,6 +629,10 @@
     "merchant": "Youtags",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Roberta",
       "last": "Stacy",
@@ -521,6 +649,10 @@
     "merchant": "Yamia",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Minna",
       "last": "Kopacek",
@@ -537,6 +669,10 @@
     "merchant": "Fliptune",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Zora",
       "last": "Ashley",
@@ -553,6 +689,10 @@
     "merchant": "Voolith",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Kayle",
       "last": "Cooley",
@@ -569,6 +709,10 @@
     "merchant": "Yakijo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Joana",
       "last": "Rothwell",
@@ -585,6 +729,10 @@
     "merchant": "Skilith",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Joey",
       "last": "Dobbie",
@@ -601,6 +749,10 @@
     "merchant": "Youspan",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Barbe",
       "last": "Grint",
@@ -617,6 +769,10 @@
     "merchant": "Topicstorm",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Marena",
       "last": "Schuelcke",
@@ -633,6 +789,10 @@
     "merchant": "Jabbersphere",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Carl",
       "last": "Woodnutt",
@@ -649,6 +809,10 @@
     "merchant": "Meeveo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Gordie",
       "last": "Stoodley",
@@ -665,6 +829,10 @@
     "merchant": "Wikivu",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Brigitte",
       "last": "Kindred",
@@ -681,6 +849,10 @@
     "merchant": "Photobug",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Hendrik",
       "last": "Portugal",
@@ -697,6 +869,10 @@
     "merchant": "Babbleopia",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Sandy",
       "last": "Matfin",
@@ -713,6 +889,10 @@
     "merchant": "Demizz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Norman",
       "last": "Panther",
@@ -729,6 +909,10 @@
     "merchant": "Linkbuzz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Rupert",
       "last": "McIsaac",
@@ -745,6 +929,10 @@
     "merchant": "Aimbo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Marsh",
       "last": "Dobrowolski",
@@ -761,6 +949,10 @@
     "merchant": "Bubblebox",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Valentine",
       "last": "Crudgington",
@@ -777,6 +969,10 @@
     "merchant": "Zoonder",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Ellen",
       "last": "Bastide",
@@ -793,6 +989,10 @@
     "merchant": "Jayo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Koressa",
       "last": "Dominelli",
@@ -809,6 +1009,10 @@
     "merchant": "Viva",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Trudi",
       "last": "Caton",
@@ -825,6 +1029,10 @@
     "merchant": "Jabberbean",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Hasheem",
       "last": "Guise",
@@ -841,6 +1049,10 @@
     "merchant": "Browsecat",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Malachi",
       "last": "Kennewell",
@@ -857,6 +1069,10 @@
     "merchant": "Youspan",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Nicol",
       "last": "Corkell",
@@ -873,6 +1089,10 @@
     "merchant": "Tagchat",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Mal",
       "last": "Rounsivall",
@@ -889,6 +1109,10 @@
     "merchant": "Devbug",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Allx",
       "last": "Lissandri",
@@ -905,6 +1129,10 @@
     "merchant": "Innotype",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Kin",
       "last": "Normaville",
@@ -921,6 +1149,10 @@
     "merchant": "Topiczoom",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Oliviero",
       "last": "Longforth",
@@ -937,6 +1169,10 @@
     "merchant": "Topdrive",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Valentia",
       "last": "Garratty",
@@ -953,6 +1189,10 @@
     "merchant": "Youbridge",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Arlen",
       "last": "Barrell",
@@ -969,6 +1209,10 @@
     "merchant": "Dabshots",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Bartolomeo",
       "last": "Simnel",
@@ -985,6 +1229,10 @@
     "merchant": "Kwinu",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "George",
       "last": "Mease",
@@ -1001,6 +1249,10 @@
     "merchant": "Tagfeed",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Kilian",
       "last": "Readwin",
@@ -1017,6 +1269,10 @@
     "merchant": "Realfire",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Dianna",
       "last": "Ritmeier",
@@ -1033,6 +1289,10 @@
     "merchant": "Kimia",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Nalani",
       "last": "Farens",
@@ -1049,6 +1309,10 @@
     "merchant": "Divavu",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Phillida",
       "last": "Verryan",
@@ -1065,6 +1329,10 @@
     "merchant": "Thoughtmix",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Walton",
       "last": "Pasek",
@@ -1081,6 +1349,10 @@
     "merchant": "Oloo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Gualterio",
       "last": "Cranstone",
@@ -1097,6 +1369,10 @@
     "merchant": "Janyx",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Natalie",
       "last": "Hawlgarth",
@@ -1113,6 +1389,10 @@
     "merchant": "Gabvine",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Derk",
       "last": "Artrick",
@@ -1129,6 +1409,10 @@
     "merchant": "Realmix",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Grange",
       "last": "Amoss",
@@ -1145,6 +1429,10 @@
     "merchant": "Photobean",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Ag",
       "last": "Lassells",
@@ -1161,6 +1449,10 @@
     "merchant": "Meejo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Sheppard",
       "last": "Farland",
@@ -1177,6 +1469,10 @@
     "merchant": "Katz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Wernher",
       "last": "Cufley",
@@ -1193,6 +1489,10 @@
     "merchant": "Zoomlounge",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Odelle",
       "last": "Jacquest",
@@ -1209,6 +1509,10 @@
     "merchant": "Yodel",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Bernice",
       "last": "Coaker",
@@ -1225,6 +1529,10 @@
     "merchant": "Jabbertype",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Yolane",
       "last": "Roderighi",
@@ -1241,6 +1549,10 @@
     "merchant": "Skimia",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Gloria",
       "last": "Fearnley",
@@ -1257,6 +1569,10 @@
     "merchant": "Agivu",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Marcie",
       "last": "Harcarse",
@@ -1273,6 +1589,10 @@
     "merchant": "Photospace",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Allyn",
       "last": "Latliff",
@@ -1289,6 +1609,10 @@
     "merchant": "Realbuzz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Caldwell",
       "last": "Haddrell",
@@ -1305,6 +1629,10 @@
     "merchant": "Yacero",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Kile",
       "last": "Strotone",
@@ -1321,6 +1649,10 @@
     "merchant": "Wordware",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Norean",
       "last": "Swannie",
@@ -1337,6 +1669,10 @@
     "merchant": "Quamba",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Jodi",
       "last": "Vedyasov",
@@ -1353,6 +1689,10 @@
     "merchant": "Latz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Storm",
       "last": "Rigg",
@@ -1369,6 +1709,10 @@
     "merchant": "Mydeo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Salome",
       "last": "Colbert",
@@ -1385,6 +1729,10 @@
     "merchant": "Npath",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Stefania",
       "last": "Glossup",
@@ -1401,6 +1749,10 @@
     "merchant": "Feedfire",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Nadiya",
       "last": "Hould",
@@ -1417,6 +1769,10 @@
     "merchant": "Tavu",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Samuel",
       "last": "Summerfield",
@@ -1433,6 +1789,10 @@
     "merchant": "Flipbug",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Rutledge",
       "last": "Dametti",
@@ -1449,6 +1809,10 @@
     "merchant": "Skilith",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Hillary",
       "last": "Huntingford",
@@ -1465,6 +1829,10 @@
     "merchant": "Fliptune",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Christoffer",
       "last": "Petticrow",
@@ -1481,6 +1849,10 @@
     "merchant": "Photolist",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Rainer",
       "last": "Nail",
@@ -1497,6 +1869,10 @@
     "merchant": "Mydeo",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Spense",
       "last": "Shellcross",
@@ -1513,6 +1889,10 @@
     "merchant": "Mita",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Earle",
       "last": "MacMichael",
@@ -1529,6 +1909,10 @@
     "merchant": "Linktype",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Ali",
       "last": "Abeau",
@@ -1545,6 +1929,10 @@
     "merchant": "Tagfeed",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Niccolo",
       "last": "De Domenico",
@@ -1561,6 +1949,10 @@
     "merchant": "Feedfish",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Georgeta",
       "last": "Macy",
@@ -1577,6 +1969,10 @@
     "merchant": "Photobug",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Nicol",
       "last": "Woolf",
@@ -1593,6 +1989,10 @@
     "merchant": "Einti",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Zorana",
       "last": "Devonald",
@@ -1609,6 +2009,10 @@
     "merchant": "Lazzy",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Delinda",
       "last": "Lage",
@@ -1625,6 +2029,10 @@
     "merchant": "Meetz",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Ardelia",
       "last": "Vasyutkin",
@@ -1641,6 +2049,10 @@
     "merchant": "Yata",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Thibaud",
       "last": "Knightsbridge",
@@ -1657,6 +2069,10 @@
     "merchant": "LiveZ",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Brendan",
       "last": "Blackborn",
@@ -1673,6 +2089,10 @@
     "merchant": "Minyx",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Raymund",
       "last": "Bysshe",
@@ -1689,6 +2109,10 @@
     "merchant": "Wordpedia",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Maddy",
       "last": "Hourstan",
@@ -1705,6 +2129,10 @@
     "merchant": "Fivechat",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Seka",
       "last": "St Pierre",
@@ -1721,6 +2149,10 @@
     "merchant": "Browsedrive",
     "receipts": [],
     "comment": "",
+    "category": {
+      "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+      "name": "General"
+    },
     "user": {
       "first": "Peria",
       "last": "Koppke",
@@ -1737,6 +2169,7 @@
     "merchant": "Dynabox",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Julius",
       "last": "Burns",
@@ -1753,6 +2186,7 @@
     "merchant": "Gabtype",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Kaylyn",
       "last": "Svanetti",
@@ -1769,6 +2203,7 @@
     "merchant": "Riffpath",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Montague",
       "last": "Geeson",
@@ -1785,6 +2220,7 @@
     "merchant": "Kwilith",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Ursa",
       "last": "Culpan",
@@ -1801,6 +2237,7 @@
     "merchant": "Demimbu",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Fonzie",
       "last": "Stanyon",
@@ -1817,6 +2254,7 @@
     "merchant": "Podcat",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Maison",
       "last": "Ubee",
@@ -1833,6 +2271,7 @@
     "merchant": "Topiclounge",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Pauli",
       "last": "Rulton",
@@ -1849,6 +2288,7 @@
     "merchant": "Kayveo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Roxana",
       "last": "Maven",
@@ -1865,6 +2305,7 @@
     "merchant": "Vidoo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Linnet",
       "last": "Kincade",
@@ -1881,6 +2322,7 @@
     "merchant": "Mydo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Eleanor",
       "last": "Bunting",
@@ -1897,6 +2339,7 @@
     "merchant": "Youfeed",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Harland",
       "last": "Gatfield",
@@ -1913,6 +2356,7 @@
     "merchant": "Thoughtstorm",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Ase",
       "last": "Tidmas",
@@ -1929,6 +2373,7 @@
     "merchant": "Eare",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Thedrick",
       "last": "Kilner",
@@ -1945,6 +2390,7 @@
     "merchant": "Ooba",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Elvira",
       "last": "Vannikov",
@@ -1961,6 +2407,7 @@
     "merchant": "Vimbo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Juieta",
       "last": "Sperling",
@@ -1977,6 +2424,7 @@
     "merchant": "Oyondu",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Cornelle",
       "last": "Spain",
@@ -1993,6 +2441,7 @@
     "merchant": "Jabbertype",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Dorice",
       "last": "Bernardet",
@@ -2009,6 +2458,7 @@
     "merchant": "Youfeed",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Nappy",
       "last": "Washington",
@@ -2025,6 +2475,7 @@
     "merchant": "Skilith",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Loni",
       "last": "Daveridge",
@@ -2041,6 +2492,7 @@
     "merchant": "Devify",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Sheri",
       "last": "Allicock",
@@ -2057,6 +2509,7 @@
     "merchant": "Dynazzy",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Ileane",
       "last": "Maccaig",
@@ -2073,6 +2526,7 @@
     "merchant": "Thoughtbeat",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Gerianne",
       "last": "Henriquet",
@@ -2089,6 +2543,7 @@
     "merchant": "Flipstorm",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Anabelle",
       "last": "Slora",
@@ -2105,6 +2560,7 @@
     "merchant": "Yakijo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Sheela",
       "last": "Laise",
@@ -2121,6 +2577,7 @@
     "merchant": "Fivespan",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Mindy",
       "last": "Simeoli",
@@ -2137,6 +2594,7 @@
     "merchant": "Linkbuzz",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Myrvyn",
       "last": "McCafferky",
@@ -2153,6 +2611,7 @@
     "merchant": "Zooveo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Sherri",
       "last": "Rawdales",
@@ -2169,6 +2628,7 @@
     "merchant": "Tambee",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Darelle",
       "last": "Copping",
@@ -2185,6 +2645,7 @@
     "merchant": "Mydeo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Stephan",
       "last": "Klassman",
@@ -2201,6 +2662,7 @@
     "merchant": "Voomm",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Rawley",
       "last": "Aubray",
@@ -2217,6 +2679,7 @@
     "merchant": "Chatterbridge",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Clemente",
       "last": "Colvine",
@@ -2233,6 +2696,7 @@
     "merchant": "Feednation",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Danell",
       "last": "McNeigh",
@@ -2249,6 +2713,7 @@
     "merchant": "Topicware",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Kylynn",
       "last": "Duddell",
@@ -2265,6 +2730,7 @@
     "merchant": "Pixope",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Tedd",
       "last": "Kilsby",
@@ -2281,6 +2747,7 @@
     "merchant": "Talane",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Konstantine",
       "last": "Filyukov",
@@ -2297,6 +2764,7 @@
     "merchant": "Livetube",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Cal",
       "last": "Bernaert",
@@ -2313,6 +2781,7 @@
     "merchant": "Wordware",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Ebba",
       "last": "Youngs",
@@ -2329,6 +2798,7 @@
     "merchant": "Buzzshare",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Gabbie",
       "last": "Quant",
@@ -2345,6 +2815,7 @@
     "merchant": "Devpoint",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Briggs",
       "last": "Raffeorty",
@@ -2361,6 +2832,7 @@
     "merchant": "Agimba",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Nelle",
       "last": "Zmitruk",
@@ -2377,6 +2849,7 @@
     "merchant": "Chatterbridge",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Shaylyn",
       "last": "Corkill",
@@ -2393,6 +2866,7 @@
     "merchant": "Vitz",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Vincenty",
       "last": "Smewin",
@@ -2409,6 +2883,7 @@
     "merchant": "Meembee",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Miquela",
       "last": "Mattimoe",
@@ -2425,6 +2900,7 @@
     "merchant": "Livepath",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Teresita",
       "last": "Byway",
@@ -2441,6 +2917,7 @@
     "merchant": "Yodel",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Rosalynd",
       "last": "Kyston",
@@ -2457,6 +2934,7 @@
     "merchant": "Tagtune",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Terrijo",
       "last": "Walduck",
@@ -2473,6 +2951,7 @@
     "merchant": "Topicshots",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Man",
       "last": "Ibberson",
@@ -2489,6 +2968,7 @@
     "merchant": "Plajo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Kala",
       "last": "Tobin",
@@ -2505,6 +2985,7 @@
     "merchant": "Tagopia",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Joanie",
       "last": "Tummond",
@@ -2521,6 +3002,7 @@
     "merchant": "Skalith",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Leyla",
       "last": "Heale",
@@ -2537,6 +3019,7 @@
     "merchant": "Voonder",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Hilary",
       "last": "Wybrow",
@@ -2553,6 +3036,7 @@
     "merchant": "Kazu",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Elisabeth",
       "last": "Flaubert",
@@ -2569,6 +3053,7 @@
     "merchant": "Eire",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Brander",
       "last": "Belt",
@@ -2585,6 +3070,7 @@
     "merchant": "Feedspan",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Willi",
       "last": "McCosker",
@@ -2601,6 +3087,7 @@
     "merchant": "Blogtag",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Quint",
       "last": "Iskower",
@@ -2617,6 +3104,7 @@
     "merchant": "Innotype",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Opal",
       "last": "Cohen",
@@ -2633,6 +3121,7 @@
     "merchant": "Thoughtblab",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Bartolemo",
       "last": "Bleyman",
@@ -2649,6 +3138,7 @@
     "merchant": "Chatterpoint",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Benedicta",
       "last": "Roch",
@@ -2665,6 +3155,7 @@
     "merchant": "Photobug",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Minta",
       "last": "Antosch",
@@ -2681,6 +3172,7 @@
     "merchant": "Kwideo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Janna",
       "last": "Brunet",
@@ -2697,6 +3189,7 @@
     "merchant": "Kanoodle",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Mignon",
       "last": "Witnall",
@@ -2713,6 +3206,7 @@
     "merchant": "Tekfly",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Rubia",
       "last": "Gamet",
@@ -2729,6 +3223,7 @@
     "merchant": "Gigaclub",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Georgi",
       "last": "Derwin",
@@ -2745,6 +3240,7 @@
     "merchant": "Bluezoom",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Hillyer",
       "last": "Looby",
@@ -2761,6 +3257,7 @@
     "merchant": "Tagopia",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Adan",
       "last": "Pococke",
@@ -2777,6 +3274,7 @@
     "merchant": "Eayo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Heath",
       "last": "Carn",
@@ -2793,6 +3291,7 @@
     "merchant": "Zooxo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Udale",
       "last": "Cobley",
@@ -2809,6 +3308,7 @@
     "merchant": "Twitternation",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Aindrea",
       "last": "Lefeuvre",
@@ -2825,6 +3325,7 @@
     "merchant": "Gigabox",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Susann",
       "last": "Wedon",
@@ -2841,6 +3342,7 @@
     "merchant": "Dabfeed",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Fabian",
       "last": "Boyda",
@@ -2857,6 +3359,7 @@
     "merchant": "Quaxo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Art",
       "last": "Ghost",
@@ -2873,6 +3376,7 @@
     "merchant": "Quimba",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Yardley",
       "last": "Zavittieri",
@@ -2889,6 +3393,7 @@
     "merchant": "Mydeo",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Stacee",
       "last": "McDarmid",
@@ -2905,6 +3410,7 @@
     "merchant": "Blognation",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Trevor",
       "last": "Heaphy",
@@ -2921,6 +3427,7 @@
     "merchant": "Tagopia",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Brittni",
       "last": "Hanna",
@@ -2937,6 +3444,7 @@
     "merchant": "Twitterworks",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Roseline",
       "last": "Gaylard",
@@ -2953,6 +3461,7 @@
     "merchant": "Wikizz",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Carlynne",
       "last": "Hupka",
@@ -2969,6 +3478,7 @@
     "merchant": "Oyoba",
     "receipts": [],
     "comment": "",
+    "category": null,
     "user": {
       "first": "Donnamarie",
       "last": "Renon",
