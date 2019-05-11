@@ -60,9 +60,19 @@ export default class App extends PureComponent {
   };
 
   searchCriteria = expense => {
-    const { searchQuery } = this.state;
+    const { searchQuery, activeCategoryId } = this.state;
+    let searchMatch = true;
+    let categoryMatch = true;
 
-    return expense.merchant.toLowerCase().includes(searchQuery.toLowerCase());
+    if (searchQuery) {
+      searchMatch = expense.merchant.toLowerCase().includes(searchQuery.toLowerCase());
+    }
+
+    if (activeCategoryId) {
+      categoryMatch = expense.category && expense.category.id === activeCategoryId;
+    }
+
+    return searchMatch && categoryMatch;
   };
 
   updateActiveIndex = activeIndex => {
