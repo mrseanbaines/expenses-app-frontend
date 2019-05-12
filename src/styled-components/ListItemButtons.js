@@ -12,6 +12,25 @@ const Item = styled.li`
   user-select: none;
   line-height: ${props => props.theme.fontSizes[2]};
   border: 1px solid transparent;
+  position: relative;
+
+  .dots {
+    position: absolute;
+    right: ${props => props.theme.space[2]};
+    margin: ${props => props.theme.space[1]};
+    padding: ${props => props.theme.space[1]};
+    border-radius: ${props => props.theme.radii[2]};
+    cursor: pointer;
+    border: none;
+    background: none;
+
+    :hover,
+    :focus,
+    :active,
+    &.active {
+      background: ${props => props.theme.colors.overlay};
+    }
+  }
 
   :hover,
   :focus,

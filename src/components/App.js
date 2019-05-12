@@ -123,7 +123,12 @@ export default class App extends PureComponent {
             <SearchBar updateSearchQuery={this.updateSearchQuery} searchQuery={searchQuery} />
             <Hr />
             <Box mt={2}>
-              <ListItemButtons items={categories} onClick={this.setActiveCategory} activeItem={activeCategoryId} />
+              <ListItemButtons
+                options
+                items={categories}
+                onClick={this.setActiveCategory}
+                activeItem={activeCategoryId}
+              />
 
               <form onSubmit={this.addCategory} autoComplete="off">
                 <ComponentToggle>
