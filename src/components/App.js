@@ -130,23 +130,25 @@ export default class App extends PureComponent {
                 activeItem={activeCategoryId}
               />
 
-              <form onSubmit={this.addCategory} autoComplete="off">
-                <ComponentToggle>
-                  <Item toggleHandler="onClick">
-                    <Box mr={2}>
-                      <img src={iconPlus} alt="" width="16" height="16" />
-                    </Box>
-                    Add category
-                  </Item>
-                  <TextInput
-                    toggleHandler="onBlur"
-                    name="category"
-                    value={newCategoryText}
-                    placeholder="Add a category"
-                    onChange={this.updateCategoryValue}
-                  />
-                </ComponentToggle>
-              </form>
+              <Box mt={1}>
+                <form onSubmit={this.addCategory} autoComplete="off">
+                  <ComponentToggle>
+                    <Item toggleHandler="onClick">
+                      <Box mr={2}>
+                        <img src={iconPlus} alt="" width="16" height="16" />
+                      </Box>
+                      Add category
+                    </Item>
+                    <TextInput
+                      toggleHandler="onBlur"
+                      name="category"
+                      value={newCategoryText}
+                      placeholder="Add a category"
+                      onChange={this.updateCategoryValue}
+                    />
+                  </ComponentToggle>
+                </form>
+              </Box>
             </Box>
           </Col>
           <Col width={[1, 8 / 12]}>

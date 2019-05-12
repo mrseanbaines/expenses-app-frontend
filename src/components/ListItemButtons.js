@@ -25,6 +25,7 @@ ListItemButtons.defaultProps = {
   items: [],
   onClick: () => {},
   activeItem: '',
+  options: false,
 };
 
 ListItemButtons.propTypes = {
@@ -36,6 +37,7 @@ ListItemButtons.propTypes = {
   ),
   onClick: PropTypes.func,
   activeItem: PropTypes.string,
+  options: PropTypes.bool,
 };
 
 export default ListItemButtons;

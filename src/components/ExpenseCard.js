@@ -112,7 +112,9 @@ export default class ExpenseCard extends PureComponent {
                   </Item>
                   <div>
                     <ListItemButtons items={categories} onClick={this.setCategory} activeItem={category.id} />
-                    <Item onClick={this.removeCategory}>Remove category</Item>
+                    <Box mt={1}>
+                      <Item onClick={this.removeCategory}>Remove category</Item>
+                    </Box>
                   </div>
                 </ComponentToggle>
               ) : (

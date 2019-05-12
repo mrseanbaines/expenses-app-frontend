@@ -98,6 +98,12 @@ const TextInput = styled.input.attrs({
   display: block;
   width: 100%;
   border: 1px solid transparent;
+  outline: none;
+
+  :focus,
+  :active {
+    border-color: ${props => props.theme.colors.main};
+  }
 
   ::placeholder {
     color: ${props => props.theme.colors.greys.medium};

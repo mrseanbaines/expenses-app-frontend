@@ -83,7 +83,7 @@
     "id": "b8086b50-a1a8-450f-b43f-0b3bc8d10da8",
     "amount": {
       "value": "1935.75",
-      "currency": "ARS"
+      "currency": "EUR"
     },
     "date": "2017-04-13T13:43:44Z",
     "merchant": "Youopia",
@@ -103,7 +103,7 @@
     "id": "df059ddd-6613-4a3b-8087-a18433d5e2a7",
     "amount": {
       "value": "1808.86",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-09-05T14:53:53Z",
     "merchant": "Vimbo",
@@ -143,7 +143,7 @@
     "id": "a48ec46e-4e9e-44c7-a98c-17da81e3ada3",
     "amount": {
       "value": "1400.38",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2017-12-06T12:04:54Z",
     "merchant": "Meejo",
@@ -243,7 +243,7 @@
     "id": "6daedf79-ba7e-420c-88a1-26d6da3101b7",
     "amount": {
       "value": "1142.29",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-08-11T10:57:04Z",
     "merchant": "Youspan",
@@ -283,7 +283,7 @@
     "id": "6ef37405-032c-49e8-8bbc-183d5b694080",
     "amount": {
       "value": "870.24",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-02-26T02:36:04Z",
     "merchant": "Quinu",
@@ -303,7 +303,7 @@
     "id": "22c26b89-dbf9-4c0f-94d7-cf8e3a8009e8",
     "amount": {
       "value": "482.21",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-08-16T02:42:30Z",
     "merchant": "Janyx",
@@ -403,7 +403,7 @@
     "id": "252296da-1088-45c6-8a9b-414ac782a4e5",
     "amount": {
       "value": "671.91",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-02-21T14:40:00Z",
     "merchant": "Quinu",
@@ -423,7 +423,7 @@
     "id": "b21b88f2-b40d-42ab-8a1c-be60b2cae8df",
     "amount": {
       "value": "580.50",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-05-22T04:47:30Z",
     "merchant": "Wikido",
@@ -483,7 +483,7 @@
     "id": "fef265b3-f041-4e0d-9b44-694e4515b479",
     "amount": {
       "value": "1811.39",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-05-22T13:51:01Z",
     "merchant": "Skajo",
@@ -543,7 +543,7 @@
     "id": "33187112-b5e0-4539-9067-b42a9332e702",
     "amount": {
       "value": "1474.06",
-      "currency": "ARS"
+      "currency": "EUR"
     },
     "date": "2018-12-29T13:32:50Z",
     "merchant": "Avamba",
@@ -623,7 +623,7 @@
     "id": "9e0bee4f-75d3-4673-ac93-ea0db3ff626b",
     "amount": {
       "value": "45.23",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-05-27T17:03:34Z",
     "merchant": "Youtags",
@@ -803,7 +803,7 @@
     "id": "927b29eb-8a49-456e-9606-9ff695ee9253",
     "amount": {
       "value": "75.06",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-04-24T17:50:00Z",
     "merchant": "Meeveo",
@@ -983,7 +983,7 @@
     "id": "a3223418-6ee5-43a2-8704-fb8cd886f2ad",
     "amount": {
       "value": "1165.18",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-01-16T04:18:37Z",
     "merchant": "Jayo",
@@ -1023,7 +1023,7 @@
     "id": "afa5da6c-835a-4d61-b53a-d63274db7451",
     "amount": {
       "value": "1861.38",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-03-04T00:01:55Z",
     "merchant": "Jabberbean",
@@ -1103,7 +1103,7 @@
     "id": "b7625d0b-a461-4feb-a548-d8113479003d",
     "amount": {
       "value": "649.02",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-12-19T08:00:39Z",
     "merchant": "Devbug",
@@ -1123,7 +1123,7 @@
     "id": "ca498fc4-074a-407e-857e-6694a7e9a553",
     "amount": {
       "value": "282.15",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2017-09-23T14:15:22Z",
     "merchant": "Innotype",
@@ -1143,7 +1143,7 @@
     "id": "884acc03-bee1-4a64-ba23-4f172d8c82ca",
     "amount": {
       "value": "505.85",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-07-19T08:56:33Z",
     "merchant": "Topiczoom",
@@ -1163,7 +1163,7 @@
     "id": "61d653cc-0ac7-4fe1-8f20-410e96526bcf",
     "amount": {
       "value": "1265.13",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-07-24T07:36:38Z",
     "merchant": "Topdrive",
@@ -1183,7 +1183,7 @@
     "id": "29a3fd66-412f-41d3-8533-d520707ee170",
     "amount": {
       "value": "1206.33",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-08-26T01:37:56Z",
     "merchant": "Youbridge",
@@ -1203,7 +1203,7 @@
     "id": "c48bc368-5315-4de5-80cd-222e1e33c9c8",
     "amount": {
       "value": "1054.05",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-09-09T21:45:28Z",
     "merchant": "Dabshots",
@@ -1243,7 +1243,7 @@
     "id": "2ea407b4-0435-4074-92eb-99bfc1879006",
     "amount": {
       "value": "1670.95",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2017-06-13T09:53:52Z",
     "merchant": "Tagfeed",
@@ -1283,7 +1283,7 @@
     "id": "d9452487-5683-4714-b3ba-83e5114a855e",
     "amount": {
       "value": "921.58",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-02-01T11:51:34Z",
     "merchant": "Kimia",
@@ -1323,7 +1323,7 @@
     "id": "3f8b41c9-613d-40c7-9982-09446b58bc05",
     "amount": {
       "value": "938.72",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-05-22T14:05:29Z",
     "merchant": "Thoughtmix",
@@ -1343,7 +1343,7 @@
     "id": "14a23d7a-17fc-427d-8a33-e65dce53db40",
     "amount": {
       "value": "204.06",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-11-21T01:18:38Z",
     "merchant": "Oloo",
@@ -1503,7 +1503,7 @@
     "id": "53892719-5ac8-494f-86b5-4776216651c8",
     "amount": {
       "value": "447.86",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-11-01T12:51:49Z",
     "merchant": "Yodel",
@@ -1563,7 +1563,7 @@
     "id": "0c0a7213-e491-4286-a302-8178b8a16246",
     "amount": {
       "value": "640.29",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-03-01T17:03:15Z",
     "merchant": "Agivu",
@@ -1583,7 +1583,7 @@
     "id": "5d45d2eb-db13-4378-91b5-058415bf3912",
     "amount": {
       "value": "1889.09",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-10-17T20:47:33Z",
     "merchant": "Photospace",
@@ -1663,7 +1663,7 @@
     "id": "6256eac4-63aa-4da2-9f40-73795ee59205",
     "amount": {
       "value": "647.98",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-05-06T21:42:09Z",
     "merchant": "Quamba",
@@ -1850,7 +1850,7 @@
     "id": "b02d56b5-373d-4d87-90d5-4f339de53da0",
     "amount": {
       "value": "224.69",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-05-18T11:33:35Z",
     "merchant": "Mita",
@@ -1867,7 +1867,7 @@
     "id": "58528c16-718e-4f91-9d47-3d4aae0c05f7",
     "amount": {
       "value": "526.16",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-06-08T00:02:59Z",
     "merchant": "Linktype",
@@ -1884,7 +1884,7 @@
     "id": "4280827e-b569-4a2c-9f97-5ba6e4bc3bac",
     "amount": {
       "value": "1491.32",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2017-03-10T07:58:56Z",
     "merchant": "Tagfeed",
@@ -1901,7 +1901,7 @@
     "id": "53b66b78-675f-44ba-8e34-d1e62d65604f",
     "amount": {
       "value": "1833.47",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-09-18T04:08:06Z",
     "merchant": "Feedfish",
@@ -1918,7 +1918,7 @@
     "id": "7876d88a-0ece-49ff-ba40-27e17ef8c521",
     "amount": {
       "value": "1313.69",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-03-17T00:25:11Z",
     "merchant": "Photobug",
@@ -2071,7 +2071,7 @@
     "id": "ff8ff4d8-2371-45df-9749-f79a1175db0c",
     "amount": {
       "value": "475.85",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-04-24T09:16:23Z",
     "merchant": "Browsedrive",
@@ -2139,7 +2139,7 @@
     "id": "7b741fcd-5711-4a88-9382-745273300167",
     "amount": {
       "value": "475.06",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-07-14T06:14:27Z",
     "merchant": "Kwilith",
@@ -2207,7 +2207,7 @@
     "id": "7955dda6-f4a3-4837-9a19-40af3029b30b",
     "amount": {
       "value": "700.23",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-05-06T16:11:41Z",
     "merchant": "Kayveo",
@@ -2241,7 +2241,7 @@
     "id": "779902ab-db7a-439d-b6b2-ab7ff6769c53",
     "amount": {
       "value": "1608.08",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-11-24T12:08:27Z",
     "merchant": "Mydo",
@@ -2258,7 +2258,7 @@
     "id": "e9cbd55c-a82d-4388-999c-62b4da9e8156",
     "amount": {
       "value": "1351.92",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-06-14T17:32:00Z",
     "merchant": "Youfeed",
@@ -2292,7 +2292,7 @@
     "id": "2b12947a-e867-4060-aafc-304e2301d787",
     "amount": {
       "value": "72.07",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-11-29T23:56:56Z",
     "merchant": "Eare",
@@ -2343,7 +2343,7 @@
     "id": "63ae722c-42e8-4ef1-8c27-ed1e66eccd14",
     "amount": {
       "value": "1679.12",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-06-04T06:55:37Z",
     "merchant": "Oyondu",
@@ -2445,7 +2445,7 @@
     "id": "3066a8d6-87c2-4e73-a6f7-969451660dc3",
     "amount": {
       "value": "693.47",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-08-16T11:47:18Z",
     "merchant": "Thoughtbeat",
@@ -2479,7 +2479,7 @@
     "id": "82e36a27-6592-448f-93fe-ae4d9c85be7f",
     "amount": {
       "value": "1024.72",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-01-23T14:45:48Z",
     "merchant": "Yakijo",
@@ -2513,7 +2513,7 @@
     "id": "db706b77-5e61-41d3-8a1d-aed7f04df09d",
     "amount": {
       "value": "1716.29",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-10-08T13:47:42Z",
     "merchant": "Linkbuzz",
@@ -2530,7 +2530,7 @@
     "id": "b6a6c02f-7c0f-4e8f-83f8-4b57d81f3c44",
     "amount": {
       "value": "1991.98",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-04-07T22:31:52Z",
     "merchant": "Zooveo",
@@ -2615,7 +2615,7 @@
     "id": "46f04933-817a-4f0d-8e07-ac15f4ab5a7f",
     "amount": {
       "value": "1569.72",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-09-03T17:47:54Z",
     "merchant": "Feednation",
@@ -2700,7 +2700,7 @@
     "id": "f11d5460-3779-4de7-91da-166b20ede5ba",
     "amount": {
       "value": "586.77",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2017-12-17T17:23:18Z",
     "merchant": "Wordware",
@@ -2751,7 +2751,7 @@
     "id": "03d992a3-37cb-4e18-8005-6f4b5d2c755c",
     "amount": {
       "value": "93.65",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-03-04T03:01:20Z",
     "merchant": "Agimba",
@@ -2853,7 +2853,7 @@
     "id": "a92c68ed-690e-43bb-9aa9-400eb24becd1",
     "amount": {
       "value": "405.79",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-07-22T21:28:11Z",
     "merchant": "Tagtune",
@@ -2870,7 +2870,7 @@
     "id": "97f73b28-5fe9-4f2a-bffb-36a9a2c0490c",
     "amount": {
       "value": "883.49",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-11-26T13:55:56Z",
     "merchant": "Topicshots",
@@ -2955,7 +2955,7 @@
     "id": "7567eb48-d8f4-495a-a1ea-bdae25a61193",
     "amount": {
       "value": "517.90",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-06-07T11:13:29Z",
     "merchant": "Kazu",
@@ -3023,7 +3023,7 @@
     "id": "28c6e13a-ee85-4767-ac8e-6d3c182b576f",
     "amount": {
       "value": "1863.94",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-04-17T13:16:30Z",
     "merchant": "Innotype",
@@ -3057,7 +3057,7 @@
     "id": "d8b65e3d-75a6-4172-9584-4fa51eb3c859",
     "amount": {
       "value": "1704.19",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-12-24T15:10:33Z",
     "merchant": "Chatterpoint",
@@ -3074,7 +3074,7 @@
     "id": "5cd730d6-9cd2-4efc-9743-1e83f18f6118",
     "amount": {
       "value": "399.83",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2017-10-02T23:39:15Z",
     "merchant": "Photobug",
@@ -3176,7 +3176,7 @@
     "id": "ff9a43ca-a276-46d0-a457-bd7f8d5f4ffa",
     "amount": {
       "value": "899.69",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-09-09T04:12:57Z",
     "merchant": "Tagopia",
@@ -3193,7 +3193,7 @@
     "id": "e2f606ac-6464-474a-a6af-9b57d83dbb20",
     "amount": {
       "value": "919.29",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-04-29T05:48:11Z",
     "merchant": "Eayo",
@@ -3210,7 +3210,7 @@
     "id": "7f5643dc-0962-411f-a955-497e6a6eb3ee",
     "amount": {
       "value": "119.43",
-      "currency": "CNY"
+      "currency": "USD"
     },
     "date": "2018-12-15T20:29:54Z",
     "merchant": "Zooxo",
@@ -3329,7 +3329,7 @@
     "id": "82594e81-88f8-414f-b4d8-08fc37fa2b7d",
     "amount": {
       "value": "558.93",
-      "currency": "PHP"
+      "currency": "AUD"
     },
     "date": "2018-03-16T03:36:55Z",
     "merchant": "Blognation",

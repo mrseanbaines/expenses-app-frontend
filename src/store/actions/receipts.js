@@ -1,7 +1,7 @@
 import actionTypes from '../action-types';
 
 const updateExpense = updatedExpense => ({
-  type: actionTypes.expenses.UPDATE_EXPENSE,
+  type: actionTypes.expenses.UPDATE_EXPENSE_SUCCESS,
   updatedExpense,
 });
 

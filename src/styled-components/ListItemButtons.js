@@ -14,8 +14,13 @@ const Item = styled.li`
   border: 1px solid transparent;
   position: relative;
 
+  &:not(:last-child) {
+    margin-bottom: ${props => props.theme.space[1]};
+  }
+
   .dots {
     position: absolute;
+    top: 0;
     right: ${props => props.theme.space[2]};
     margin: ${props => props.theme.space[1]};
     padding: ${props => props.theme.space[1]};
