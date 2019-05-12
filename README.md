@@ -1,3 +1,5 @@
+![Demo screenshot](./demo-screenshot.png 'Demo screenshot')
+
 ## Setup
 
 Make sure you have [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed.
