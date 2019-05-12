@@ -1,5 +1,9 @@
 import actionTypes from '../action-types';
-import { expensesActions } from '.';
+
+const updateExpense = updatedExpense => ({
+  type: actionTypes.expenses.UPDATE_EXPENSE,
+  updatedExpense,
+});
 
 const uploadReceiptRequest = () => ({
   type: actionTypes.receipts.UPLOAD_RECEIPT_REQUEST,
@@ -21,7 +25,7 @@ const uploadReceipt = ({ id, formData }) => async dispatch => {
       body: formData,
     });
     const json = await response.json();
-    dispatch(expensesActions.updateExpense(json));
+    dispatch(updateExpense(json));
     dispatch(uploadReceiptSuccess());
     return json;
   } catch (error) {
@@ -30,6 +34,4 @@ const uploadReceipt = ({ id, formData }) => async dispatch => {
   }
 };
 
-export default {
-  uploadReceipt,
-};
+export default { uploadReceipt };

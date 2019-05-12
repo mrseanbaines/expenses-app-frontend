@@ -39,7 +39,7 @@ export default (state = initialState, { type, expenses, updatedExpense }) => {
       };
     }
 
-    case actionTypes.expenses.UPDATE_EXPENSE: {
+    case actionTypes.expenses.UPDATE_EXPENSE_SUCCESS: {
       return {
         ...state,
         expenses: state.expenses.map(expense => {

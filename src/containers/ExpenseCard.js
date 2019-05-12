@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import ExpenseCard from '../components/ExpenseCard';
-import { commentsActions, receiptsActions } from '../store/actions';
+import { expensesActions, receiptsActions } from '../store/actions';
 
 const mapDispatchToProps = dispatch => ({
-  addComment: args => dispatch(commentsActions.addComment(args)),
+  updateExpense: args => dispatch(expensesActions.updateExpense(args)),
   uploadReceipt: args => dispatch(receiptsActions.uploadReceipt(args)),
 });
 

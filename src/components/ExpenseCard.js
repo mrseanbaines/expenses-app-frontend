@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { StyledExpenseCard, Grid, Common, StyledListItemButtons } from '../styled-components';
 import { formatPrice, formatDate } from '../utils';
 import iconPlus from '../images/icon-plus.svg';
+import ComponentToggle from './ComponentToggle';
+import ListItemButtons from './ListItemButtons';
 
 const { Container, User, Merchant, Amount, DateTime, Comment } = StyledExpenseCard;
 const { Hr, Button, TextLink, TextInput } = Common;
@@ -20,14 +22,29 @@ export default class ExpenseCard extends PureComponent {
 
   addComment = async ({ e, id }) => {
     e.preventDefault();
-    const { addComment } = this.props;
+
+    const { updateExpense } = this.props;
     const { commentText: comment } = this.state;
 
-    if (!comment) return;
+    if (!comment || !id) return;
 
-    await addComment({ id, comment });
+    await updateExpense({ id, comment });
 
     this.setState({ commentText: '' });
+  };
+
+  setCategory = category => {
+    const { updateExpense, id } = this.props;
+
+    if (!category) return;
+
+    updateExpense({ category, id });
+  };
+
+  removeCategory = () => {
+    const { updateExpense, id } = this.props;
+
+    updateExpense({ category: null, id });
   };
 
   updateComment = e => {
@@ -65,6 +82,7 @@ export default class ExpenseCard extends PureComponent {
       index,
       updateActiveIndex,
       updateActiveImage,
+      categories,
     } = this.props;
 
     const { currency, value } = amount;
@@ -87,17 +105,28 @@ export default class ExpenseCard extends PureComponent {
             </Box>
             <Box mt={3}>
               {category ? (
-                <Item noBg>
-                  <Icon />
-                  {category.name}
-                </Item>
+                <ComponentToggle>
+                  <Item outline>
+                    <Icon />
+                    {category.name}
+                  </Item>
+                  <div>
+                    <ListItemButtons items={categories} onClick={this.setCategory} activeItem={category.id} />
+                    <Item onClick={this.removeCategory}>Remove category</Item>
+                  </div>
+                </ComponentToggle>
               ) : (
-                <Item inline outline onClick={this.toggleAddingCategory}>
-                  <Box mr={2}>
-                    <img src={iconPlus} alt="Add" width="16" height="16" />
-                  </Box>
-                  Choose category
-                </Item>
+                <ComponentToggle>
+                  <Item outline>
+                    <Box mr={2}>
+                      <img src={iconPlus} alt="" width="16" height="16" />
+                    </Box>
+                    Choose category
+                  </Item>
+                  <div>
+                    <ListItemButtons items={categories} onClick={this.setCategory} />
+                  </div>
+                </ComponentToggle>
               )}
             </Box>
           </Box>
@@ -173,7 +202,7 @@ export default class ExpenseCard extends PureComponent {
 }
 
 ExpenseCard.defaultProps = {
-  addComment: () => {},
+  updateExpense: () => {},
   uploadReceipt: () => {},
   id: '',
   user: {
@@ -189,6 +218,7 @@ ExpenseCard.defaultProps = {
   },
   comment: '',
   category: null,
+  categories: [],
   receipts: [],
   activeIndex: 0,
   index: 0,
@@ -197,7 +227,7 @@ ExpenseCard.defaultProps = {
 };
 
 ExpenseCard.propTypes = {
-  addComment: PropTypes.func,
+  updateExpense: PropTypes.func,
   uploadReceipt: PropTypes.func,
   id: PropTypes.string,
   user: PropTypes.shape({
@@ -216,6 +246,12 @@ ExpenseCard.propTypes = {
     id: PropTypes.string,
     name: PropTypes.string,
   }),
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+    })
+  ),
   receipts: PropTypes.arrayOf(PropTypes.object),
   activeIndex: PropTypes.number,
   index: PropTypes.number,

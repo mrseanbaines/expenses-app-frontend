@@ -1,36 +1,33 @@
 import actionTypes from '../action-types';
-import { expensesActions } from '.';
 
-const addCommentRequest = () => ({
-  type: actionTypes.comments.ADD_COMMENT_REQUEST,
+const updateExpenseRequest = () => ({
+  type: actionTypes.expenses.UPDATE_EXPENSE_REQUEST,
 });
 
-const addCommentSuccess = () => ({
-  type: actionTypes.comments.ADD_COMMENT_SUCCESS,
+const updateExpenseSuccess = updatedExpense => ({
+  type: actionTypes.expenses.UPDATE_EXPENSE_SUCCESS,
+  updatedExpense,
 });
 
-const addCommentFailure = () => ({
-  type: actionTypes.comments.ADD_COMMENT_FAILURE,
+const updateExpenseFailure = () => ({
+  type: actionTypes.expenses.UPDATE_EXPENSE_FAILURE,
 });
 
-const addComment = ({ id, comment }) => async dispatch => {
+const updateExpense = ({ id, comment, category }) => async dispatch => {
   try {
-    dispatch(addCommentRequest());
+    dispatch(updateExpenseRequest());
     const response = await fetch(`${process.env.API_URL}/expenses/${id}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ comment }),
+      body: JSON.stringify({ comment, category }),
     });
     const json = await response.json();
-    dispatch(expensesActions.updateExpense(json));
-    dispatch(addCommentSuccess());
+    dispatch(updateExpenseSuccess(json));
     return json;
   } catch (error) {
-    dispatch(addCommentFailure());
+    dispatch(updateExpenseFailure());
     return error;
   }
 };
 
-export default {
-  addComment,
-};
+export default { updateExpense };

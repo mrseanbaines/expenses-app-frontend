@@ -6,10 +6,10 @@ const { Item, Icon } = StyledListItemButtons;
 
 const ListItemButtons = memo(({ items, onClick, activeItem }) => (
   <ul>
-    {items.map(item => (
-      <Item key={item.id} onClick={() => onClick(item.id)} className={item.id === activeItem ? 'active' : undefined}>
+    {items.map(({ id, name }) => (
+      <Item key={id} onClick={() => onClick({ id, name })} className={id === activeItem ? 'active' : undefined}>
         <Icon />
-        {item.name}
+        {name}
       </Item>
     ))}
   </ul>

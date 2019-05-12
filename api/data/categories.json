@@ -1,5 +1,9 @@
 [
   {
+    "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
+    "name": "General"
+  },
+  {
     "id": "1f9793a7-c5b3-4ab6-855e-a91546d77bce",
     "name": "Transport"
   },
@@ -10,9 +14,5 @@
   {
     "id": "77ebd9ec-7680-4607-b316-64548681cc02",
     "name": "Bills"
-  },
-  {
-    "id": "f3ce11a4-576b-42b5-9f55-b2611cd7205b",
-    "name": "General"
   }
 ]

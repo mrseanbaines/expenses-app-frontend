@@ -5,6 +5,4 @@ const setCurrentPage = ({ currentPage }) => ({
   currentPage,
 });
 
-export default {
-  setCurrentPage,
-};
+export default { setCurrentPage };

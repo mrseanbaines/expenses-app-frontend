@@ -46,8 +46,14 @@ router.post('/:id', (req, res) => {
   const expense = expenses.find(exp => exp.id === req.params.id);
 
   if (expense) {
-    expense.comment = req.body.comment || expense.comment;
-    expense.category = req.body.category || expense.category;
+    if (req.body.comment !== undefined) {
+      expense.comment = req.body.comment;
+    }
+
+    if (req.body.category !== undefined) {
+      expense.category = req.body.category;
+    }
+
     res.status(200).send(expense);
   } else {
     res.status(404).send('Expense not found');

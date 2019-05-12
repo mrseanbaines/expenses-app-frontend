@@ -7,6 +7,7 @@ import Pagination from './Pagination';
 import Modal from './Modal';
 import ListItemButtons from './ListItemButtons';
 import iconPlus from '../images/icon-plus.svg';
+import ComponentToggle from './ComponentToggle';
 
 const { Hr, TextInput } = Common;
 const { Container, Row, Col, Box } = Grid;
@@ -21,7 +22,6 @@ export default class App extends PureComponent {
       activeIndex: 0,
       itemsPerPage: 25,
       activeImage: '',
-      addingCategory: false,
       newCategoryText: '',
       activeCategoryId: '',
     };
@@ -83,30 +83,15 @@ export default class App extends PureComponent {
     this.setState({ activeImage });
   };
 
-  toggleAddingCategory = () => {
-    const { addingCategory } = this.state;
-
-    this.setState(
-      prevState => ({
-        addingCategory: !prevState.addingCategory,
-      }),
-      () => {
-        if (!addingCategory) {
-          this.categoryInput.current.focus();
-        }
-      }
-    );
-  };
-
   updateCategoryValue = e => {
     this.setState({
       newCategoryText: e.target.value,
     });
   };
 
-  setActiveCategory = categoryId => {
+  setActiveCategory = ({ id }) => {
     this.setState(prevState => ({
-      activeCategoryId: prevState.activeCategoryId === categoryId ? '' : categoryId,
+      activeCategoryId: prevState.activeCategoryId === id ? '' : id,
     }));
   };
 
@@ -124,15 +109,7 @@ export default class App extends PureComponent {
 
   render = () => {
     const { expenses, total, currentPage, categories } = this.props;
-    const {
-      activeImage,
-      activeIndex,
-      itemsPerPage,
-      searchQuery,
-      addingCategory,
-      newCategoryText,
-      activeCategoryId,
-    } = this.state;
+    const { activeImage, activeIndex, itemsPerPage, searchQuery, newCategoryText, activeCategoryId } = this.state;
 
     return (
       <Container>
@@ -147,25 +124,24 @@ export default class App extends PureComponent {
             <Hr />
             <Box mt={2}>
               <ListItemButtons items={categories} onClick={this.setActiveCategory} activeItem={activeCategoryId} />
-              {addingCategory ? (
-                <form onSubmit={this.addCategory} autoComplete="off">
+
+              <form onSubmit={this.addCategory} autoComplete="off">
+                <ComponentToggle>
+                  <Item toggleHandler="onClick">
+                    <Box mr={2}>
+                      <img src={iconPlus} alt="" width="16" height="16" />
+                    </Box>
+                    Add category
+                  </Item>
                   <TextInput
-                    ref={this.categoryInput}
+                    toggleHandler="onBlur"
                     name="category"
                     value={newCategoryText}
                     placeholder="Add a category"
-                    onBlur={this.toggleAddingCategory}
                     onChange={this.updateCategoryValue}
                   />
-                </form>
-              ) : (
-                <Item onClick={this.toggleAddingCategory}>
-                  <Box mr={2}>
-                    <img src={iconPlus} alt="" width="16" height="16" />
-                  </Box>
-                  Add category
-                </Item>
-              )}
+                </ComponentToggle>
+              </form>
             </Box>
           </Col>
           <Col width={[1, 8 / 12]}>
@@ -177,6 +153,9 @@ export default class App extends PureComponent {
                   activeIndex={activeIndex}
                   updateActiveIndex={this.updateActiveIndex}
                   updateActiveImage={this.updateActiveImage}
+                  categories={categories}
+                  setActiveCategory={this.setActiveCategory}
+                  activeCategoryId={activeCategoryId}
                 />
               </Box>
             ))}
