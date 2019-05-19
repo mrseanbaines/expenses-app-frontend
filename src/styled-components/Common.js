@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.button.attrs({
-  type: 'submit',
-})`
+const Button = styled.button`
   font-size: ${props => props.theme.fontSizes[0]};
   font-weight: ${props => props.theme.fontWeights.medium};
   padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
@@ -13,6 +11,7 @@ const Button = styled.button.attrs({
   cursor: pointer;
   transition: all 100ms;
   line-height: ${props => props.theme.fontSizes[2]};
+  margin: 0;
 
   :hover {
     background: ${props => props.theme.colors.mainDark};
@@ -88,6 +87,7 @@ export const StyledPagination = styled.ul`
 const TextInput = styled.input.attrs({
   type: 'text',
 })`
+  -webkit-appearance: none;
   font-size: ${props => props.theme.fontSizes[0]};
   font-weight: ${props => props.theme.fontWeights.regular};
   padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
