@@ -10,6 +10,7 @@ const Container = styled.div`
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   overflow: scroll;
+  z-index: 1;
 
   .close {
     text-align: center;
