@@ -13,7 +13,8 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
-    port: process.env.SITE_PORT,
+    port: process.env.PORT,
+    disableHostCheck: true,
   },
   module: {
     rules: [

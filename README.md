@@ -20,33 +20,7 @@ npm i
 cp .env.example .env
 ```
 
-3. Start the frontend server:
-
-```sh
-npm start
-```
-
-### _In a new tab:_
-
-4. Change directories into the api directory:
-
-```sh
-cd api/
-```
-
-5. Install dependencies:
-
-```sh
-npm i
-```
-
-6. Copy environment variables to .env
-
-```sh
-cp .env.example .env
-```
-
-7. Start the backend server:
+3. Start the server:
 
 ```sh
 npm start

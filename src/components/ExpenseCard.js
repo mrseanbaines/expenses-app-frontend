@@ -5,6 +5,8 @@ import { formatPrice, formatDate } from '../utils';
 import iconPlus from '../images/icon-plus.svg';
 import ComponentToggle from './ComponentToggle';
 import ListItemButtons from './ListItemButtons';
+import iconReceipt from '../images/icon-receipt.svg';
+import iconUserDefault from '../images/icon-user-default.svg';
 
 const { Container, User, Merchant, Amount, DateTime, Comment } = StyledExpenseCard;
 const { Hr, Button, TextLink, TextInput } = Common;
@@ -93,7 +95,7 @@ export default class ExpenseCard extends PureComponent {
       <Container onClick={() => updateActiveIndex(index)}>
         <Flex justifyContent="space-between">
           <Box mr={3}>
-            <img src="./images/user-default.svg" alt="user profile" width="40px" height="40px" />
+            <img src={iconUserDefault} alt="user profile" width="40px" height="40px" />
           </Box>
           <Box flex={1}>
             <User href={`mailto:${user.email}`}>{`${user.first} ${user.last}`}</User>
@@ -134,7 +136,7 @@ export default class ExpenseCard extends PureComponent {
           </Box>
           <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" ml={2}>
             <Amount>{formatPrice({ currency, value })}</Amount>
-            {receipts.length > 0 && <img src="./images/receipt-icon.svg" alt="receipt" />}
+            {receipts.length > 0 && <img src={iconReceipt} alt="receipt" />}
           </Flex>
         </Flex>
 
@@ -165,7 +167,7 @@ export default class ExpenseCard extends PureComponent {
             {comment && (
               <Flex mt={3}>
                 <Box mr={2}>
-                  <img src="./images/user-default.svg" alt="user profile" width="24px" height="24px" />
+                  <img src={iconUserDefault} alt="user profile" width="24px" height="24px" />
                 </Box>
                 <Comment>
                   <strong>Guest</strong>
