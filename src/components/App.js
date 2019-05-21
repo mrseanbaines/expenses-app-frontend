@@ -44,35 +44,40 @@ export default class App extends PureComponent {
     }
   }
 
-  getExpenses = () => {
+  getExpenses = queryParams => {
     const { getExpenses, setCurrentPage, page } = this.props;
     const { itemsPerPage } = this.state;
-    const params = `?limit=${itemsPerPage}&offset=${(page ? page - 1 : 0) * itemsPerPage}`;
+    let params = `?limit=${itemsPerPage}&offset=${(page ? page - 1 : 0) * itemsPerPage}`;
+
+    if (queryParams) {
+      Object.entries(queryParams).forEach(([key, value]) => {
+        params += `&${key}=${value}`;
+      });
+    }
 
     getExpenses({ params });
     setCurrentPage({ currentPage: page || 1 });
   };
 
   updateSearchQuery = e => {
+    const { value } = e.target;
+
     this.setState({
-      searchQuery: e.target.value,
+      searchQuery: value,
     });
+
+    this.getExpenses(value && { search: value });
   };
 
   searchCriteria = expense => {
-    const { searchQuery, activeCategoryId } = this.state;
-    let searchMatch = true;
+    const { activeCategoryId } = this.state;
     let categoryMatch = true;
-
-    if (searchQuery) {
-      searchMatch = expense.merchant.toLowerCase().includes(searchQuery.toLowerCase());
-    }
 
     if (activeCategoryId) {
       categoryMatch = expense.category && expense.category.id === activeCategoryId;
     }
 
-    return searchMatch && categoryMatch;
+    return categoryMatch;
   };
 
   updateActiveIndex = activeIndex => {
