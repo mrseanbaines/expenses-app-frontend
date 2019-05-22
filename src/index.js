@@ -7,6 +7,7 @@ import reset from './reset';
 import theme from './theme';
 import store from './store';
 import App from './containers/App';
+import ScrollToTop from './components/ScrollToTop';
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -22,27 +23,29 @@ const GlobalStyles = createGlobalStyle`
 
 const Index = () => (
   <Router>
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <Fragment>
-          <GlobalStyles />
-          <Route
-            path="/:page?"
-            render={({ match }) => {
-              let { page } = match.params;
+    <ScrollToTop>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          <Fragment>
+            <GlobalStyles />
+            <Route
+              path="/:page?"
+              render={({ match }) => {
+                let { page } = match.params;
 
-              if (page) {
-                page = parseInt(page, 10);
-              } else {
-                page = 0;
-              }
+                if (page) {
+                  page = parseInt(page, 10);
+                } else {
+                  page = 0;
+                }
 
-              return <App page={page} />;
-            }}
-          />
-        </Fragment>
-      </ThemeProvider>
-    </Provider>
+                return <App page={page} />;
+              }}
+            />
+          </Fragment>
+        </ThemeProvider>
+      </Provider>
+    </ScrollToTop>
   </Router>
 );
 
