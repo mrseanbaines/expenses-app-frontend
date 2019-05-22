@@ -12,6 +12,7 @@ export default {
   },
   colors: {
     overlay: 'rgba(0, 0, 0, 0.03)',
+    warn: '#ee7c7c',
     main: '#b0a1ff',
     mainDark: '#a899f2',
     white: '#fff',

@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { StyledExpenseCard, Grid, Common, StyledListItemButtons } from '../styled-components';
 import { formatPrice, formatDate } from '../utils';
@@ -141,7 +141,7 @@ export default class ExpenseCard extends PureComponent {
         </Flex>
 
         {activeIndex === index && (
-          <Fragment>
+          <>
             <Box my={3}>
               <Hr />
             </Box>
@@ -198,7 +198,7 @@ export default class ExpenseCard extends PureComponent {
                 <TextLink onClick={() => updateActiveImage(receipts[receipts.length - 1].url)}>View receipt</TextLink>
               </Box>
             )}
-          </Fragment>
+          </>
         )}
       </Container>
     );
