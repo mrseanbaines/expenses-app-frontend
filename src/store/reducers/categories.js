@@ -68,6 +68,35 @@ export default (state = initialState, { type, categories, category, total }) => 
       };
     }
 
+    case actionTypes.categories.DELETE_CATEGORY_REQUEST: {
+      return {
+        ...state,
+        loading: true,
+        success: false,
+        error: false,
+      };
+    }
+
+    case actionTypes.categories.DELETE_CATEGORY_SUCCESS: {
+      return {
+        ...state,
+        loading: false,
+        success: true,
+        error: false,
+        categories: state.categories.filter(cat => cat.id !== category.id),
+        total,
+      };
+    }
+
+    case actionTypes.categories.DELETE_CATEGORY_FAILURE: {
+      return {
+        ...state,
+        loading: false,
+        success: false,
+        error: true,
+      };
+    }
+
     default: {
       return state;
     }

@@ -2,13 +2,17 @@ import styled, { css } from 'styled-components';
 
 const pixelize = arg => (typeof arg === 'number' ? `${arg}px` : arg);
 
+const Container = styled.div`
+  position: relative;
+  display: flex;
+`;
+
 const Wrapper = styled.div`
-  padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
+  padding: ${props => `${props.theme.space[1]} 0`};
   border-radius: ${props => props.theme.radii[1]};
   font-size: ${props => props.theme.fontSizes[0]};
   font-weight: ${props => props.theme.fontWeights.regular};
   background: ${props => props.theme.colors.white};
-  color: ${props => props.theme.colors.warn};
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
   position: absolute;
   z-index: 1;
@@ -19,6 +23,22 @@ const Wrapper = styled.div`
   right: ${({ right }) => right && pixelize(right)};
   bottom: ${({ bottom }) => bottom && pixelize(bottom)};
   left: ${({ left }) => left && pixelize(left)};
+
+  button {
+    background: none;
+    color: ${props => props.theme.colors.warn};
+    border: none;
+    padding: ${props => `${props.theme.space[2]} ${props.theme.space[3]}`};
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+
+    :hover,
+    :focus,
+    :active {
+      background: ${props => props.theme.colors.overlay};
+    }
+  }
 `;
 
 Wrapper.defaultProps = {
@@ -71,4 +91,4 @@ const TooltipArrow = styled.div`
   }}
 `;
 
-export default { Wrapper, TooltipArrow };
+export default { Wrapper, TooltipArrow, Container };

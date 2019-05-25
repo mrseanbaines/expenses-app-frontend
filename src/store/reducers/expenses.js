@@ -8,7 +8,7 @@ const initialState = {
   total: 0,
 };
 
-export default (state = initialState, { type, expenses, updatedExpense }) => {
+export default (state = initialState, { type, expenses, updatedExpense, category, total }) => {
   switch (type) {
     case actionTypes.expenses.GET_EXPENSES_REQUEST: {
       return {
@@ -49,6 +49,26 @@ export default (state = initialState, { type, expenses, updatedExpense }) => {
 
           return updatedExpense;
         }),
+      };
+    }
+
+    case actionTypes.categories.DELETE_CATEGORY_SUCCESS: {
+      return {
+        ...state,
+        loading: false,
+        success: true,
+        error: false,
+        expenses: state.expenses.map(expense => {
+          if (expense.category && expense.category.id === category.id) {
+            return {
+              ...expense,
+              category: null,
+            };
+          }
+
+          return expense;
+        }),
+        total,
       };
     }
 

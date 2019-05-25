@@ -1,11 +1,11 @@
-import React, { memo } from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import { StyledToolTip } from '../styled-components';
 
 const { Wrapper, TooltipArrow } = StyledToolTip;
 
-const ToolTip = memo(({ children, direction, ...props }) => (
-  <Wrapper direction={direction} {...props}>
+const ToolTip = forwardRef(({ children, direction, ...props }, ref) => (
+  <Wrapper direction={direction} {...props} ref={ref}>
     {children}
     <TooltipArrow direction={direction} />
   </Wrapper>

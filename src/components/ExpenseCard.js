@@ -109,8 +109,10 @@ export default class ExpenseCard extends PureComponent {
               {category ? (
                 <ComponentToggle>
                   <Item outline>
-                    <Icon />
-                    {category.name}
+                    <Flex>
+                      <Icon />
+                      {category.name}
+                    </Flex>
                   </Item>
                   <div>
                     <ListItemButtons items={categories} onClick={this.setCategory} activeItem={category.id} />
@@ -121,11 +123,13 @@ export default class ExpenseCard extends PureComponent {
                 </ComponentToggle>
               ) : (
                 <ComponentToggle>
-                  <Item outline>
-                    <Box mr={2}>
-                      <img src={iconPlus} alt="" width="16" height="16" />
-                    </Box>
-                    Choose category
+                  <Item outline disabled={categories.length < 1}>
+                    <Flex>
+                      <Box mr={2}>
+                        <img src={iconPlus} alt="" width="16" height="16" />
+                      </Box>
+                      Choose category
+                    </Flex>
                   </Item>
                   <div>
                     <ListItemButtons items={categories} onClick={this.setCategory} />

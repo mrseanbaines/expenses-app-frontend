@@ -1,54 +1,70 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { StyledListItemButtons } from '../styled-components';
+import { StyledListItemButtons, StyledToolTip, Grid } from '../styled-components';
 import iconDots from '../images/icon-dots.svg';
 import ToolTip from './Tooltip';
 
 const { Item, Icon } = StyledListItemButtons;
+const { Container } = StyledToolTip;
+const { Flex } = Grid;
 
 class ListItemButton extends PureComponent {
   constructor(props) {
     super(props);
 
-    this.state = {
-      showOptions: false,
-    };
+    this.toolTip = React.createRef();
   }
 
-  toggleShowOptions = e => {
-    if (e) {
-      e.stopPropagation();
-    }
+  componentDidMount() {
+    window.addEventListener('click', this.hideOptions);
+  }
 
-    this.setState(prevState => ({
-      showOptions: !prevState.showOptions,
-    }));
+  componentWillUnmount() {
+    window.removeEventListener('click', this.hideOptions);
+  }
+
+  hideOptions = e => {
+    const { setShowOptionsId } = this.props;
+
+    if (this.toolTip.current && !this.toolTip.current.contains(e.target)) {
+      setShowOptionsId({ e });
+    }
+  };
+
+  deleteCategory = () => {
+    const { deleteCategory, onClick, id, activeItem } = this.props;
+
+    deleteCategory({ id });
+
+    if (id === activeItem) {
+      onClick({});
+    }
   };
 
   render() {
-    const { onClick, activeItem, options, id, name } = this.props;
-    const { showOptions } = this.state;
+    const { onClick, activeItem, options, id, name, showOptions, setShowOptionsId } = this.props;
 
     return (
       <Item onClick={() => onClick({ id, name })} className={id === activeItem ? 'active' : undefined}>
-        <Icon />
-        {name}
+        <Flex>
+          <Icon />
+          {name}
+        </Flex>
+
         {options && (
-          <>
-            <button
-              type="button"
-              className="dots"
-              onClick={this.toggleShowOptions}
-              onMouseLeave={showOptions ? this.toggleShowOptions : undefined}
-            >
+          <Container>
+            <button type="button" className="dots" onClick={e => setShowOptionsId({ e, id })}>
               <img src={iconDots} alt="" />
-              {showOptions && (
-                <ToolTip onClick={e => e.stopPropagation()} direction="down">
-                  Delete
-                </ToolTip>
-              )}
             </button>
-          </>
+
+            {showOptions && (
+              <ToolTip ref={this.toolTip} onClick={e => e.stopPropagation()} direction="down">
+                <button type="button" onClick={this.deleteCategory}>
+                  Delete
+                </button>
+              </ToolTip>
+            )}
+          </Container>
         )}
       </Item>
     );
@@ -61,6 +77,9 @@ ListItemButton.defaultProps = {
   options: false,
   id: '12345',
   name: 'Lorem ipsum',
+  deleteCategory: () => {},
+  showOptions: false,
+  setShowOptionsId: () => {},
 };
 
 ListItemButton.propTypes = {
@@ -69,6 +88,9 @@ ListItemButton.propTypes = {
   options: PropTypes.bool,
   id: PropTypes.string,
   name: PropTypes.string,
+  deleteCategory: PropTypes.func,
+  showOptions: PropTypes.bool,
+  setShowOptionsId: PropTypes.func,
 };
 
 export default ListItemButton;

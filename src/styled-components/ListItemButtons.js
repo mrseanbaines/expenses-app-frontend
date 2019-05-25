@@ -8,6 +8,7 @@ const Item = styled.li`
   border-radius: ${props => props.theme.radii[1]};
   cursor: pointer;
   display: ${props => (props.inline ? 'inline-flex' : 'flex')};
+  justify-content: space-between;
   align-items: center;
   user-select: none;
   line-height: ${props => props.theme.fontSizes[2]};
@@ -19,21 +20,19 @@ const Item = styled.li`
   }
 
   .dots {
-    position: absolute;
-    top: 0;
-    right: ${props => props.theme.space[2]};
-    margin: ${props => props.theme.space[1]};
-    padding: ${props => props.theme.space[1]};
+    padding: 0;
     border-radius: ${props => props.theme.radii[2]};
     cursor: pointer;
     border: none;
     background: none;
+    align-self: flex-end;
 
     :hover,
     :focus,
     :active,
     &.active {
       background: ${props => props.theme.colors.overlay};
+      box-shadow: 0 0 0 ${props => props.theme.space[1]} ${props => props.theme.colors.overlay};
     }
   }
 
@@ -73,6 +72,13 @@ const Item = styled.li`
       &.active {
         border-color: transparent;
       }
+    `}
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      pointer-events: none;
+      opacity: 0.5;
     `}
 `;
 

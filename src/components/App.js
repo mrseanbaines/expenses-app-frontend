@@ -10,7 +10,7 @@ import iconPlus from '../images/icon-plus.svg';
 import ComponentToggle from './ComponentToggle';
 
 const { Hr, TextInput } = Common;
-const { Container, Row, Col, Box } = Grid;
+const { Container, Row, Col, Flex, Box } = Grid;
 const { Item } = StyledListItemButtons;
 
 export default class App extends PureComponent {
@@ -94,7 +94,7 @@ export default class App extends PureComponent {
     });
   };
 
-  setActiveCategory = ({ id }) => {
+  setActiveCategory = ({ id = '' }) => {
     this.setState(prevState => ({
       activeCategoryId: prevState.activeCategoryId === id ? '' : id,
     }));
@@ -113,7 +113,7 @@ export default class App extends PureComponent {
   };
 
   render = () => {
-    const { expenses, total, currentPage, categories } = this.props;
+    const { expenses, total, currentPage, categories, deleteCategory } = this.props;
     const { activeImage, activeIndex, itemsPerPage, searchQuery, newCategoryText, activeCategoryId } = this.state;
 
     return (
@@ -133,16 +133,19 @@ export default class App extends PureComponent {
                 items={categories}
                 onClick={this.setActiveCategory}
                 activeItem={activeCategoryId}
+                deleteCategory={deleteCategory}
               />
 
               <Box mt={1}>
                 <form onSubmit={this.addCategory} autoComplete="off">
                   <ComponentToggle>
                     <Item toggleHandler="onClick">
-                      <Box mr={2}>
-                        <img src={iconPlus} alt="" width="16" height="16" />
-                      </Box>
-                      Add category
+                      <Flex>
+                        <Box mr={2}>
+                          <img src={iconPlus} alt="" width="16" height="16" />
+                        </Box>
+                        Add category
+                      </Flex>
                     </Item>
                     <TextInput
                       toggleHandler="onBlur"
@@ -191,6 +194,7 @@ App.defaultProps = {
   currentPage: 1,
   setCurrentPage: () => {},
   addCategory: () => {},
+  deleteCategory: () => {},
 };
 
 App.propTypes = {
@@ -208,4 +212,5 @@ App.propTypes = {
   currentPage: PropTypes.number,
   setCurrentPage: PropTypes.func,
   addCategory: PropTypes.func,
+  deleteCategory: PropTypes.func,
 };

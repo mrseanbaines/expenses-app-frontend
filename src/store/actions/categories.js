@@ -28,6 +28,20 @@ const addCategoryFailure = () => ({
   type: actionTypes.categories.ADD_CATEGORY_FAILURE,
 });
 
+const deleteCategoryRequest = () => ({
+  type: actionTypes.categories.DELETE_CATEGORY_REQUEST,
+});
+
+const deleteCategorySuccess = ({ category, total }) => ({
+  type: actionTypes.categories.DELETE_CATEGORY_SUCCESS,
+  category,
+  total,
+});
+
+const deleteCategoryFailure = () => ({
+  type: actionTypes.categories.DELETE_CATEGORY_FAILURE,
+});
+
 const getCategories = () => async dispatch => {
   try {
     dispatch(getCategoriesRequest());
@@ -58,4 +72,20 @@ const addCategory = ({ category }) => async dispatch => {
   }
 };
 
-export default { getCategories, addCategory };
+const deleteCategory = ({ id }) => async dispatch => {
+  try {
+    dispatch(deleteCategoryRequest());
+    const response = await fetch(`${process.env.API_URL}/categories/${id}`, {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    const json = await response.json();
+    dispatch(deleteCategorySuccess(json));
+    return json;
+  } catch (error) {
+    dispatch(deleteCategoryFailure());
+    return error;
+  }
+};
+
+export default { getCategories, addCategory, deleteCategory };
