@@ -30,7 +30,7 @@ const Index = () => (
             <GlobalStyles />
             <Route
               path="/:page?"
-              render={({ match }) => {
+              render={({ match, history }) => {
                 let { page } = match.params;
 
                 if (page) {
@@ -39,7 +39,7 @@ const Index = () => (
                   page = 0;
                 }
 
-                return <App page={page} />;
+                return <App page={page} history={history} url={match.url} />;
               }}
             />
           </Fragment>

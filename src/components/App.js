@@ -73,6 +73,7 @@ export default class App extends PureComponent {
       searchQuery: value,
     });
 
+    this.resetPage();
     this.getExpenses();
   };
 
@@ -99,6 +100,7 @@ export default class App extends PureComponent {
       activeCategoryId: nextActiveCategoryId,
     });
 
+    this.resetPage();
     this.getExpenses();
   };
 
@@ -112,6 +114,14 @@ export default class App extends PureComponent {
     await addCategory({ category });
 
     this.setState({ newCategoryText: '' });
+  };
+
+  resetPage = () => {
+    const { history, url } = this.props;
+
+    if (url !== '/' && url !== '/1') {
+      history.push('/');
+    }
   };
 
   render = () => {
@@ -195,6 +205,10 @@ App.defaultProps = {
   setCurrentPage: () => {},
   addCategory: () => {},
   deleteCategory: () => {},
+  history: {
+    push: () => {},
+  },
+  url: '',
 };
 
 App.propTypes = {
@@ -213,4 +227,8 @@ App.propTypes = {
   setCurrentPage: PropTypes.func,
   addCategory: PropTypes.func,
   deleteCategory: PropTypes.func,
+  history: PropTypes.shape({
+    push: PropTypes.func,
+  }),
+  url: PropTypes.string,
 };

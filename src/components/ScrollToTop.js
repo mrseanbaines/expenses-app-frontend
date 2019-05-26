@@ -20,7 +20,9 @@ class ScrollToTop extends PureComponent {
 
 ScrollToTop.defaultProps = {
   children: null,
-  location: '',
+  location: {
+    pathname: '',
+  },
 };
 
 ScrollToTop.propTypes = {
