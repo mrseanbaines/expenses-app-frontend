@@ -38,9 +38,10 @@ export default class App extends PureComponent {
 
   componentDidUpdate(prevProps) {
     const { page } = this.props;
+    const { searchQuery } = this.state;
 
     if (prevProps.page !== page) {
-      this.getExpenses();
+      this.getExpenses(searchQuery && { search: searchQuery });
     }
   }
 
