@@ -38,47 +38,42 @@ export default class App extends PureComponent {
 
   componentDidUpdate(prevProps) {
     const { page } = this.props;
-    const { searchQuery } = this.state;
 
     if (prevProps.page !== page) {
-      this.getExpenses(searchQuery && { search: searchQuery });
+      this.getExpenses();
     }
   }
 
-  getExpenses = queryParams => {
+  getExpenses = () => {
     const { getExpenses, setCurrentPage, page } = this.props;
     const { itemsPerPage } = this.state;
-    let params = `?limit=${itemsPerPage}&offset=${(page ? page - 1 : 0) * itemsPerPage}`;
+    let params = '';
 
-    if (queryParams) {
-      Object.entries(queryParams).forEach(([key, value]) => {
-        params += `&${key}=${value}`;
-      });
-    }
+    const { searchQuery, activeCategoryId } = this.state;
+
+    const paramItems = {
+      ...(itemsPerPage && { limit: itemsPerPage, offset: (page ? page - 1 : 0) * itemsPerPage }),
+      ...(activeCategoryId && { category: activeCategoryId }),
+      ...(searchQuery && { search: searchQuery }),
+    };
+
+    Object.entries(paramItems).forEach(([key, value], i) => {
+      const prefix = i === 0 ? '?' : '&';
+      params += `${prefix}${key}=${value}`;
+    });
 
     getExpenses({ params });
     setCurrentPage({ currentPage: page || 1 });
   };
 
-  updateSearchQuery = e => {
+  updateSearchQuery = async e => {
     const { value } = e.target;
 
-    this.setState({
+    await this.setState({
       searchQuery: value,
     });
 
-    this.getExpenses(value && { search: value });
-  };
-
-  searchCriteria = expense => {
-    const { activeCategoryId } = this.state;
-    let categoryMatch = true;
-
-    if (activeCategoryId) {
-      categoryMatch = expense.category && expense.category.id === activeCategoryId;
-    }
-
-    return categoryMatch;
+    this.getExpenses();
   };
 
   updateActiveIndex = activeIndex => {
@@ -95,10 +90,16 @@ export default class App extends PureComponent {
     });
   };
 
-  setActiveCategory = ({ id = '' }) => {
-    this.setState(prevState => ({
-      activeCategoryId: prevState.activeCategoryId === id ? '' : id,
-    }));
+  updateActiveCategory = async ({ id = '' }) => {
+    const { activeCategoryId } = this.state;
+
+    const nextActiveCategoryId = activeCategoryId === id ? '' : id;
+
+    await this.setState({
+      activeCategoryId: nextActiveCategoryId,
+    });
+
+    this.getExpenses();
   };
 
   addCategory = async e => {
@@ -132,7 +133,7 @@ export default class App extends PureComponent {
               <ListItemButtons
                 options
                 items={categories}
-                onClick={this.setActiveCategory}
+                onClick={this.updateActiveCategory}
                 activeItem={activeCategoryId}
                 deleteCategory={deleteCategory}
               />
@@ -161,7 +162,7 @@ export default class App extends PureComponent {
             </Box>
           </Col>
           <Col width={[1, 8 / 12]}>
-            {expenses.filter(this.searchCriteria).map((expense, i) => (
+            {expenses.map((expense, i) => (
               <Box key={expense.id} my={[2, 2, 3]}>
                 <ExpenseCard
                   {...expense}
@@ -170,7 +171,6 @@ export default class App extends PureComponent {
                   updateActiveIndex={this.updateActiveIndex}
                   updateActiveImage={this.updateActiveImage}
                   categories={categories}
-                  setActiveCategory={this.setActiveCategory}
                   activeCategoryId={activeCategoryId}
                 />
               </Box>
