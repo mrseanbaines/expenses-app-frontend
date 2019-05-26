@@ -170,7 +170,6 @@ export default class App extends PureComponent {
                   activeIndex={activeIndex}
                   updateActiveIndex={this.updateActiveIndex}
                   updateActiveImage={this.updateActiveImage}
-                  categories={categories}
                   activeCategoryId={activeCategoryId}
                 />
               </Box>
