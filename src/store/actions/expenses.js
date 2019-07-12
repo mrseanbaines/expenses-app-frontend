@@ -32,10 +32,8 @@ const getExpenses = ({ params }) => async dispatch => {
     const response = await fetch(`${process.env.API_URL}/expenses/${params}`);
     const json = await response.json();
     dispatch(getExpensesSuccess(json));
-    return json;
-  } catch (error) {
+  } catch (e) {
     dispatch(getExpensesFailure());
-    return error;
   }
 };
 
@@ -49,10 +47,8 @@ const updateExpense = ({ id, comment, category }) => async dispatch => {
     });
     const json = await response.json();
     dispatch(updateExpenseSuccess(json));
-    return json;
-  } catch (error) {
+  } catch (e) {
     dispatch(updateExpenseFailure());
-    return error;
   }
 };
 

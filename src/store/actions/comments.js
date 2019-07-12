@@ -23,10 +23,8 @@ const updateExpense = ({ id, comment, category }) => async dispatch => {
     });
     const json = await response.json();
     dispatch(updateExpenseSuccess(json));
-    return json;
-  } catch (error) {
+  } catch (e) {
     dispatch(updateExpenseFailure());
-    return error;
   }
 };
 

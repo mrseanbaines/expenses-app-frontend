@@ -55,7 +55,7 @@ export default class ExpenseCard extends PureComponent {
     this.setState({ commentText });
   };
 
-  uploadReceipt = async ({ e, id }) => {
+  uploadReceipt = ({ e, id }) => {
     e.preventDefault();
 
     const receipt = e.target.files[0];
@@ -65,9 +65,8 @@ export default class ExpenseCard extends PureComponent {
     formData.append('receipt', receipt);
 
     const { uploadReceipt } = this.props;
-    const response = await uploadReceipt({ id, formData });
 
-    return response;
+    uploadReceipt({ id, formData });
   };
 
   render = () => {

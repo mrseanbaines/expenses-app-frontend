@@ -27,10 +27,8 @@ const uploadReceipt = ({ id, formData }) => async dispatch => {
     const json = await response.json();
     dispatch(updateExpense(json));
     dispatch(uploadReceiptSuccess());
-    return json;
-  } catch (error) {
+  } catch (e) {
     dispatch(uploadReceiptFailure());
-    return error;
   }
 };
 

@@ -48,10 +48,8 @@ const getCategories = () => async dispatch => {
     const response = await fetch(`${process.env.API_URL}/categories`);
     const json = await response.json();
     dispatch(getCategoriesSuccess(json));
-    return json;
-  } catch (error) {
+  } catch (e) {
     dispatch(getCategoriesFailure());
-    return error;
   }
 };
 
@@ -65,10 +63,8 @@ const addCategory = ({ category }) => async dispatch => {
     });
     const json = await response.json();
     dispatch(addCategorySuccess(json));
-    return json;
-  } catch (error) {
+  } catch (e) {
     dispatch(addCategoryFailure());
-    return error;
   }
 };
 
@@ -81,10 +77,8 @@ const deleteCategory = ({ id }) => async dispatch => {
     });
     const json = await response.json();
     dispatch(deleteCategorySuccess(json));
-    return json;
-  } catch (error) {
+  } catch (e) {
     dispatch(deleteCategoryFailure());
-    return error;
   }
 };
 
