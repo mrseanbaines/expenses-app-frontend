@@ -27,7 +27,7 @@ export default class ButtonInputToggle extends PureComponent {
     );
   };
 
-  render() {
+  render = () => {
     const { activeIndex } = this.state;
     const { children } = this.props;
     const child = children[activeIndex] || children;
@@ -37,7 +37,7 @@ export default class ButtonInputToggle extends PureComponent {
       [toggleHandler || 'onClick']: this.toggleActive,
       ref: this.ref,
     });
-  }
+  };
 }
 
 ButtonInputToggle.defaultProps = {

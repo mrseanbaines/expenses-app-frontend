@@ -36,13 +36,13 @@ export default class App extends PureComponent {
     getCategories();
   };
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate = prevProps => {
     const { page } = this.props;
 
     if (prevProps.page !== page) {
       this.getExpenses();
     }
-  }
+  };
 
   getExpenses = () => {
     const { getExpenses, setCurrentPage, page } = this.props;

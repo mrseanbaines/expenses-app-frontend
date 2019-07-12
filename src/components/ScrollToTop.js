@@ -3,19 +3,19 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 class ScrollToTop extends PureComponent {
-  componentDidUpdate(prevProps) {
+  componentDidUpdate = prevProps => {
     const { location } = this.props;
 
     if (location.pathname !== prevProps.location.pathname) {
       window.scrollTo(0, 0);
     }
-  }
+  };
 
-  render() {
+  render = () => {
     const { children } = this.props;
 
     return children;
-  }
+  };
 }
 
 ScrollToTop.defaultProps = {

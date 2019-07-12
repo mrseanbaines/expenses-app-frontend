@@ -21,7 +21,7 @@ class ListItemButtons extends PureComponent {
     }));
   };
 
-  render() {
+  render = () => {
     const { items, onClick, activeItem, options, deleteCategory } = this.props;
     const { toggleId } = this.state;
 
@@ -42,7 +42,7 @@ class ListItemButtons extends PureComponent {
         ))}
       </ul>
     );
-  }
+  };
 }
 
 ListItemButtons.defaultProps = {

@@ -15,13 +15,13 @@ class ListItemButton extends PureComponent {
     this.toolTip = React.createRef();
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     window.addEventListener('click', this.hideOptions);
-  }
+  };
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     window.removeEventListener('click', this.hideOptions);
-  }
+  };
 
   hideOptions = e => {
     const { setShowOptionsId } = this.props;
@@ -41,7 +41,7 @@ class ListItemButton extends PureComponent {
     }
   };
 
-  render() {
+  render = () => {
     const { onClick, activeItem, options, id, name, showOptions, setShowOptionsId } = this.props;
 
     return (
@@ -68,7 +68,7 @@ class ListItemButton extends PureComponent {
         )}
       </Item>
     );
-  }
+  };
 }
 
 ListItemButton.defaultProps = {
