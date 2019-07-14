@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --open --mode=development",
-    "build": "NODE_ENV=production webpack --mode=production",
+    "start": "webpack-dev-server --open --mode=development",
+    "build": "webpack --mode=production",
     "prettier": "prettier --write '**/*.{js,css,scss,md}'",
     "prettier:check": "prettier --check '**/*.{js,css,scss,md}'",
     "eslint": "eslint . --fix",
@@ -33,6 +33,7 @@
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
     "clean-webpack-plugin": "^3.0.0",
+    "dotenv-webpack": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",

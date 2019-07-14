@@ -1,7 +1,7 @@
 const path = require('path');
-const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 // Load environment variables from the `.env` file.
 require('dotenv').config();
@@ -32,10 +32,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
-      'process.env.API_URL': JSON.stringify(process.env.API_URL || '/'),
-    }),
+    new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
