@@ -5,6 +5,7 @@ const Container = styled(Flex)`
   max-width: 960px;
   position: relative;
 `;
+
 Container.defaultProps = {
   mx: 'auto',
   px: [2, 2, 3],
